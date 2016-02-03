@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" class="ng-scope" ng-app="bangModule">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="favicon.ico">
+		<title>BANG 2.0 | N'oubliez Pas Les Paroles</title>
+		<!-- Bootstrap Core CSS -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<!-- Custom CSS -->
+		<link href="css/simple-sidebar.css" rel="stylesheet">
+	</head>
+	<body ng-controller="ThemesController as themesCtrl">
+		<div id="wrapper">
+			<ng-include src="'navbar.html'"></ng-include>
+			<!-- #LYRICS -->
+			<div class="row" id="lyrics">
+				<div class="col-lg-12">
+					<h3>N'Oubliez Pas Les Paroles</h3>
+					<div class="col-lg-12" ng-repeat="lyric in themesCtrl.lyrics">
+						<button style="font-size:3.5em;" ng-click="lyricUsed = !lyricUsed" ng-class="{'btn-info' :  !lyricUsed}" class="btn btn-float btn-lg btn-block">{{"#"+($index+1)+" : "}}{{lyricUsed && '??? - ???' || lyric.name}}</button>
+						<hr>
+					</div>
+				</div> 
+			</div>
+
+			<div class="row" id="quiz">
+				<div class="row" ng-repeat="lyric in themesCtrl.lyrics">
+					<div class="col-lg-12">
+						<h3>{{lyric.name}}</h3>
+						<hr>
+					</div>
+					<div class="col-lg-12" ng-repeat="question in lyric.questions">
+						<div class="panel panel-info">
+							<div class="panel-heading" style="font-size:2em">Question {{$index+1}}/{{lyric.questions.length}}</div>
+							<div class="panel-body" style="font-size:2.5em"><p>{{question.question}}</p></div>
+							<div class="panel-footer">
+								<button style="font-size:2.5em" ng-repeat="reponse in question.reponses" ng-click="lyricFound = !lyricFound" ng-class="{'btn-{{reponse.class}}' : !lyricFound}" class="btn btn-block btn-lg btn-float"><p style="margin:auto;padding:auto;">{{reponse.reponse}}</p></button>
+							</div>
+						</div>
+						<hr>
+					</div>
+				</div>
+			</div>
+			<!-- /#LYRICS -->
+		</div>
+		
+		<!-- JavaScript -->
+		<script type="text/javascript" src="js/angular.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/npm.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<!-- Menu Toggle Script -->
+		<script>
+		$("#menu-toggle").click(function(e) {
+			e.preventDefault();
+			$("#wrapper").toggleClass("toggled");
+		});
+		</script>
+	</body>
+</html>

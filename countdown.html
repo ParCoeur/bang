@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="favicon.ico">
+		<title>BANG 2.0 | Le Grand Blind Test</title>
+		<!-- Bootstrap Core CSS -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<!-- Custom CSS -->
+		<link href="css/simple-sidebar.css" rel="stylesheet">
+	</head>
+	<body ng-controller="ThemesController as themesCtrl">
+		<div id="wrapper">
+			<div ng-app='TimerApp' class="row">
+				<div ng-controller="TimerCtrl" class="col-lg-12">
+					<div class="row" style="font-size:35em;text-align:center;">{{counter}}</div>
+					<div class="row" style="text-align:center;"><button ng-click='startTimer()'>Start</button> | <button ng-click='stopTimer()'>Stop</button></div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- JavaScript -->
+	    <script type="text/javascript" src="js/angular.js"></script>
+	    <script type="text/javascript" src="js/timer.js"></script>
+	    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	    <script type="text/javascript" src="js/npm.js"></script>
+		<!-- Menu Toggle Script -->
+		<script>
+		$("#menu-toggle").click(function(e) {
+			e.preventDefault();
+			$("#wrapper").toggleClass("toggled");
+		});
+		</script>
+	</body>
+</html>

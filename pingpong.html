@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" class="ng-scope" ng-app="bangModule">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="favicon.ico">
+		<title>BANG 2.0 | Ping-Pong</title>
+		<!-- Bootstrap Core CSS -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<!-- Custom CSS -->
+		<link href="css/simple-sidebar.css" rel="stylesheet">
+	</head>
+	<body ng-controller="ThemesController as themesCtrl">
+		<div id="wrapper">
+			<ng-include src="'navbar.html'"></ng-include>
+			<!-- #PING-PONG -->
+			<div class="row" id="pingpong">
+				<div class="col-lg-12">
+					<h3>Ping-Pong</h3>
+					<hr>
+					  <table class="table table-striped">.
+						<thead>
+						  <tr> 
+							<th></th>
+							<th style="text-align:center;font-size:2em;">A</th>
+							<th style="text-align:center;font-size:2em;">B</th>
+							<th style="text-align:center;font-size:2em;">C</th>
+							<th style="text-align:center;font-size:2em;">D</th>
+							<!-- <th style="text-align:center;font-size:2em;">E</th> -->
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+							<td style="vertical-align:middle;text-align:center;font-size:2em;font-weight:bold;">1</td>
+							<td width="25%" class="pong" ng-repeat="pong in themesCtrl.pongs.slice(0,4)">
+							  <button ng-click="toggle = !toggle" id="pong-{{pong.id}}" ng-class="{'btn-primary' : !toggle}" class="btn btn-float btn-lg btn-block" style="font-size:3em;">{{toggle && '?' || pong.name}}</button>
+							</td>
+						  </tr>
+						  <tr>
+							<td style="vertical-align:middle;text-align:center;font-size:2em;font-weight:bold;">2</td>
+							<td width="25%" class="pong" ng-repeat="pong in themesCtrl.pongs.slice(4,8)">
+							  <button ng-click="toggle = !toggle" id="pong-{{pong.id}}" ng-class="{'btn-success' : !toggle}" class="btn btn-float btn-lg btn-block" style="font-size:3em;">{{toggle && '?' || pong.name}}</button>
+							</td>
+						  </tr>
+						  <tr>
+							<td style="vertical-align:middle;text-align:center;font-size:2em;font-weight:bold;">3</td>
+							<td width="25%" class="pong" ng-repeat="pong in themesCtrl.pongs.slice(8,12)">
+							  <button ng-click="toggle = !toggle" id="pong-{{pong.id}}" ng-class="{'btn-warning' : !toggle}" class="btn btn-float btn-lg btn-block" style="font-size:3em;">{{toggle && '?' || pong.name}}</button>
+							</td>
+						  </tr>
+						  <tr>
+							<td style="vertical-align:middle;text-align:center;font-size:2em;font-weight:bold;">4</td>
+							<td width="25%" class="pong" ng-repeat="pong in themesCtrl.pongs.slice(12,16)">
+							  <button ng-click="toggle = !toggle" id="pong-{{pong.id}}" ng-class="{'btn-danger' : !toggle}" class="btn btn-float btn-lg btn-block" style="font-size:3em;">{{toggle && '?' || pong.name}}</button>
+							</td>
+						  </tr>
+						</tbody>
+					  </table>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-12">
+					<h3>Match Ping-Pong</h3>
+					<hr>
+					<div class="panel">
+						<div class="panel-body">
+							<div class="col-lg-4" style="text-align:center;">
+								<div style="font-size:4em;" ng-bind="timers[0].getSeconds()"> </div>
+					    		<div style="font-size:2em;" ng-bind="team1 || 'Equipe 1'"> </div>
+							</div>
+							<div class="col-lg-4" style="text-align:center;">
+								<button class="btn btn-warning btn-lg btn-block" style="font-size:3em;" ng-click="alter()">{{ "GO !" }}</button>
+								<hr>
+								<div class="col-lg-12">
+									<input type="text" style="text-align:center;" placeholder="Equipe 1" ng-model="team1" />
+									<input type="text" style="text-align:center;" placeholder="Equipe 2" ng-model="team2" />
+								</div>
+							</div>				      
+						    <div class="col-lg-4" style="text-align:center;">
+						    	<div style="font-size:4em;" ng-bind="timers[1].getSeconds()"> </div>
+							    <div style="font-size:2em;" ng-bind="team2 || 'Equipe 2'"> </div>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /#PING-PONG -->
+		</div>
+		
+		<!-- JavaScript -->
+		<script type="text/javascript" src="js/angular.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/npm.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<!-- Menu Toggle Script -->
+		<script>
+		$("#menu-toggle").click(function(e) {
+			e.preventDefault();
+			$("#wrapper").toggleClass("toggled");
+		});
+		</script>
+	</body>
+</html>
+>
