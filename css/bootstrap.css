@@ -7573,4 +7573,14 @@ input[type="checkbox"]:disabled:checked:after,
   padding-top: 80px;
   padding-bottom: 80px;
 }
+
+.back-primary {
+  color:#ffffff;
+  background-color: #2196f3;
+}
+
+.back-danger {
+  color:#ffffff;
+  background-color: #b9151b;
+}
 /*  */

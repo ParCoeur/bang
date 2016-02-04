@@ -6,7 +6,7 @@
 		// $routeProvider.when('/blindtest', { templateUrl: 'includes/blindtest.html', controller: 'ThemesController' });
 	// }]);
 		
-	app.controller('ThemesController', ['$scope','$http', function($scope, $http) {
+	app.controller('ThemesController', ['$scope','$http','$interval', function($scope, $http, $interval) {
 		var bang 		= this;
 		bang.normals 	= [];
 		bang.pongs 		= [];
@@ -46,13 +46,38 @@
 		var initTime = 30
 
 		$scope.timers = [new Countdown(initTime), new Countdown(initTime)] // 2 timers
-		var current = 1;
+		$scope.current = 1;
+
+		$scope.arrow = "GO !";
+		$scope.colorArrow = "";
+		$scope.teamStarter = "";
+
+		$scope.changeStarter = function() {
+			if($scope.current%2==0) {
+				$scope.current = 1;
+				$scope.colorArrow = "blue";
+			}
+			else {
+			 	$scope.current = 0;
+			 	$scope.colorArrow = "red";
+			}
+		}
 
 		/** Upon clicking, stop the current timer, resume the other one **/
 		$scope.alter = function() {
-			$scope.timers[current].pause();
-			current = ++current % 2;
-			$scope.timers[current].start();
+			$scope.timers[$scope.current].pause();
+			$scope.current = ++$scope.current % 2;
+			$scope.timers[$scope.current].start();
+			if($scope.current%2 == 1) 
+			{
+				$scope.arrow = ">>";
+				$scope.colorArrow = "red";
+			}
+			else
+			{
+				$scope.arrow = "<<";
+				$scope.colorArrow = "blue";
+			}
 		}
 
 		function Countdown(time) {
@@ -71,7 +96,7 @@
 			    	return;
 			  	}
 			  	countdownInterval = $interval(function() {
-			    	--value
+			    	if(value > 0) --value
 			    	self.terminated = value <= 0;
 			 	}, 10)
 			  	this.started = true;
