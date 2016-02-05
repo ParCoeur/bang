@@ -45,7 +45,7 @@
 
 		var initTime = 30
 
-		$scope.timers = [new Countdown(initTime), new Countdown(initTime)] // 2 timers
+		$scope.timers = [new Countdown(initTime), new Countdown(initTime)]; // 2 timers
 		$scope.current = 1;
 
 		$scope.arrow = "GO !";
@@ -55,7 +55,15 @@
 		$scope.timerPaused = false;
 
 		$scope.resetTimer = function() {
+			$scope.timers[0].pause();
+			$scope.timers[1].pause();
 
+			$scope.timers = [new Countdown(initTime), new Countdown(initTime)];
+			$scope.arrow = "GO !";
+			$scope.colorArrow = "";
+			$scope.teamStarter = "";
+			$scope.timerStarted = false;
+			$scope.timerPaused = false;
 		}
 
 		$scope.changeStarter = function() {
@@ -87,10 +95,8 @@
 		}
 
 		$scope.pauseTimer = function() {
-			if($scope.timerStarted==true)
-				$scope.timers[$scope.current].pause();
-			else
-				$scope.timers[$scope.current].start();
+			if($scope.timerStarted==true) $scope.timers[$scope.current].pause();
+			else $scope.timers[$scope.current].start();
 		}
 
 		function Countdown(time) {
@@ -102,10 +108,6 @@
 
 			this.getSeconds = function() {
 				return Math.ceil(value / 100) // 0.01 milliseconds -> seconds
-			}
-
-			this.resetTime = function() {
-				time = initTime;
 			}
 
 			this.start = function() {
