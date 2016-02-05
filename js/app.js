@@ -51,6 +51,12 @@
 		$scope.arrow = "GO !";
 		$scope.colorArrow = "";
 		$scope.teamStarter = "";
+		$scope.timerStarted = false;
+		$scope.timerPaused = false;
+
+		$scope.resetTimer = function() {
+
+		}
 
 		$scope.changeStarter = function() {
 			if($scope.current%2==0) {
@@ -80,6 +86,13 @@
 			}
 		}
 
+		$scope.pauseTimer = function() {
+			if($scope.timerStarted==true)
+				$scope.timers[$scope.current].pause();
+			else
+				$scope.timers[$scope.current].start();
+		}
+
 		function Countdown(time) {
 			var self = this;
 			var value = (time || 100) * 100; // seconds -> 0.01 second (not ms)
@@ -91,15 +104,22 @@
 				return Math.ceil(value / 100) // 0.01 milliseconds -> seconds
 			}
 
+			this.resetTime = function() {
+				time = initTime;
+			}
+
 			this.start = function() {
 				if (this.started) {
 			    	return;
 			  	}
 			  	countdownInterval = $interval(function() {
 			    	if(value > 0) --value
+			    	else $interval.cancel(countdownInterval)
 			    	self.terminated = value <= 0;
 			 	}, 10)
 			  	this.started = true;
+			  	$scope.timerStarted = true;
+			  	$scope.timerPaused = false;
 			}
 
 			this.pause = function() {
@@ -107,8 +127,10 @@
 			    	return;
 			  	}
 			  	this.started = false;
+			  	$scope.timerStarted = false;
 			  	$interval.cancel(countdownInterval)
 			  	countdownInterval = null;
+			  	$scope.timerPaused = true;
 			}
 		}
   	}]);
