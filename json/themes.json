@@ -638,21 +638,201 @@
 		}
 	],
 	"mashups" : [
-		{ "name" : "Soft Cell v Bob Marley - Tainted Love (Is This Love)" },
-		{ "name" : "M v Eminem - Machistador (Without Me)" },
-		{ "name" : "Adele v Eurythmics - Rolling In The Deep (Sweet Dreams)" },
-		{ "name" : "Robert Miles v Taylor Swift - Children (I Know You Were Trouble)" },
-		{ "name" : "Psy v Ray Parker Jr - Gangnam Style (Ghostbusters)" },
-		{ "name" : "Shaggy v The Beatles - It Wasn't Me (Let It Be)" },
-		{ "name" : "NTM v Trust - Qu'est-ce Qu'on Attend (Antisocial)" },
-		{ "name" : "The Police v The Bee Gees - Roxanne (You Should Be Dancing)" },
-		{ "name" : "Rihanna v M83 - Diamonds (Midnight City)" },
-		{ "name" : "Lady Gaga v Flo Rida - Just Dance (Good Feeling)" },
-		{ "name" : "OMI v Jason Derulo - Cheerleader (Want You Want Me)" },
-		{ "name" : "Coldplay v Disclosure - Viva La Vida (Latch)" },
-		{ "name" : "Serge Gainsbourg v Jacques Brel - Requiem Pour Un Con (Les Marquises)" },
-		{ "name" : "Kygo v Avicii - Firestone (Wake Me Up)" },
-		{ "name" : "Blackstreet v Ed Sheeran - No Diggity (Don't)" }
+		{ 
+			"name" : "Soft Cell v Bob Marley - Tainted Love (Is This Love)",
+			"titles" : [
+				{
+					"name" : "Soft Cell - Tainted Love",
+					"img" : "softcell.jpg"
+				},
+				{
+					"name" : "Bob Marley - Is This Love",
+					"img" : "bobmarley.jpg"
+				}
+			]
+		},
+		{ 
+			"name" : "M v Eminem - Machistador (Without Me)",
+			"titles" : [
+				{
+					"name" : "M - Machistador",
+					"img" : "machistador.jpg"
+				},
+				{
+					"name" : "Eminem - Without Me",
+					"img" : "eminem.jpg"
+				}
+			]
+		},
+		{ 
+			"name" : "Adele v Eurythmics - Rolling In The Deep (Sweet Dreams)",
+			"titles" : [
+				{
+					"name" : "Adele - Rolling In The Deep",
+					"img" : "adele.png"
+				},
+				{
+					"name" : "Eurythmics - Sweet Dreams",
+					"img" : "eurythmics.jpg"
+				}
+			]
+		},
+		{ 
+			"name" : "Robert Miles v Taylor Swift - Children (I Know You Were Trouble)",
+			"titles" : [
+				{
+					"name" : "Robert Miles - Children",
+					"img" : "children.jpg"
+				},
+				{
+					"name" : "Taylor Swift - I Know You Were Trouble",
+					"img" : "taylor.jpg"
+				}
+			]
+		},
+		{ 
+			"name" : "Psy v Ray Parker Jr - Gangnam Style (Ghostbusters)",
+			"titles" : [
+				{
+					"name" : "Psy - Gangnam Style",
+					"img" : "psy.jpg"
+				},
+				{
+					"name" : "Ray Parker Jr - Ghostbusters",
+					"img" : "ghostbusters.jpg"
+				}
+			]
+		},
+		{ 
+			"name" : "Shaggy v The Beatles - It Wasn't Me (Let It Be)",
+			"titles" : [
+				{
+					"name" : "Shaggy - It Wasn't Me",
+					"img" : "shaggy.jpg"
+				},
+				{
+					"name" : "The Beatles - Let It Be",
+					"img" : "beatles.jpg"
+				}
+			]
+		},
+		{ 
+			"name" : "NTM v Trust - Qu'est-ce Qu'on Attend (Antisocial)",
+			"titles" : [
+				{
+					"name" : "NTM - Qu'est-ce Qu'on Attend",
+					"img" : "ntm.jpg"
+				},
+				{
+					"name" : "Trust - Antisocial",
+					"img" : "trust.jpg"
+				}
+			]
+		},
+		{ 
+			"name" : "The Police v The Bee Gees - Roxanne (You Should Be Dancing)",
+			"titles" : [
+				{
+					"name" : "The Police - Roxanne",
+					"img" : "roxanne.jpg"
+				},
+				{
+					"name" : "The Bee Gees - You Should Be Dancing",
+					"img" : "beegees.jpg"
+				}
+			]
+		},
+		{ 
+			"name" : "Rihanna v M83 - Diamonds (Midnight City)",
+			"titles" : [
+				{
+					"name" : "Rihanna - Diamonds",
+					"img" : "rihanna.jpg"
+				},
+				{
+					"name" : "M83 - Midnight City",
+					"img" : "m83.jpg"
+				}
+			]
+		},
+		{ 
+			"name" : "Lady Gaga v Flo Rida - Just Dance (Good Feeling)",
+			"titles" : [
+				{
+					"name" : "Lady Gaga - Just Dance",
+					"img" : "gaga.png"
+				},
+				{
+					"name" : "Flo Rida - Good Feeling",
+					"img" : "florida.jpg"
+				}
+			]
+		},
+		{ 
+			"name" : "OMI v Jason Derulo - Cheerleader (Want You Want Me)",
+			"titles" : [
+				{
+					"name" : "OMI - Cheerleader (Felix Jaehn Remix)",
+					"img" : "omi.jpg"
+				},
+				{
+					"name" : "Jason Derulo - Want You Want Me",
+					"img" : "derulo.jpg"
+				}
+			]
+		},
+		{ 
+			"name" : "Coldplay v Disclosure - Viva La Vida (Latch)",
+			"titles" : [
+				{
+					"name" : "Coldplay - Viva La Vida (Felix Jaehn Remix)",
+					"img" : "coldplay.jpg"
+				},
+				{
+					"name" : "Disclosure feat. Sam Smith - Latch",
+					"img" : "latch.jpg"
+				}
+			]
+		},
+		{ 
+			"name" : "Serge Gainsbourg v Jacques Brel - Requiem Pour Un Con (Les Marquises)",
+			"titles" : [
+				{
+					"name" : "Serge Gainsbourg - Requiem Pour Un Con",
+					"img" : "requiem.jpg"
+				},
+				{
+					"name" : "Jacques Brel - Les Marquises",
+					"img" : "brel.jpg"
+				}
+			]
+		},
+		{ 
+			"name" : "Kygo v Avicii - Firestone (Wake Me Up)",
+			"titles" : [
+				{
+					"name" : "Kygo - Firestone",
+					"img" : "kygo.jpg"
+				},
+				{
+					"name" : "Avicii - Wake Me Up",
+					"img" : "avicii.jpg"
+				}
+			]
+		},
+		{ 
+			"name" : "Blackstreet v Ed Sheeran - No Diggity (Don't)",
+			"titles" : [
+				{
+					"name" : "Blackstreet - No Diggity",
+					"img" : "blackstreet.jpg"
+				},
+				{
+					"name" : "Ed Sheeran - Don't",
+					"img" : "sheeran.jpg"
+				}
+			]
+		}
 	],
 	"pistes" : [
 		{ "name" : "Alanis Morissette - Ironic" },

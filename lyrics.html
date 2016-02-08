@@ -27,12 +27,12 @@
 				</div> 
 			</div>
 			<hr>
-
 			<div class="modal fade" ng-repeat="lyric in themesCtrl.lyrics" id="lyric{{$index+1}}">
 				<div class="modal-dialog modal-lg">
 					<div class="modal-content">
 						<div class="modal-header">
 							<h3>{{lyric.name}}</h3>
+							<hr>
 							<ul class="nav nav-tabs list-inline">
 							  <li ng-repeat="question in lyric.questions" ng-class="{'active' : ($index+1)==1}"><a data-toggle="tab" href="#{{lyric.id}}{{$index+1}}">Question {{$index+1}}</a></li>
 							</ul>
@@ -56,7 +56,6 @@
 					</div>
 				</div>
 			</div>
-
 			<!-- <div class="row" id="quiz">
 				<div class="row" ng-repeat="lyric in themesCtrl.lyrics">
 					<div class="col-lg-12">
