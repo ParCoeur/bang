@@ -458,6 +458,7 @@
 	"images" : [
 		{ 
 			"name" : "Arrière-Plan",
+			"id" : "arriereplan",
 			"questions" : [
 				{ 
 					"question" : "On entend James Brown - People Get Up And Drive That Funky Soul dans ...",
@@ -502,6 +503,7 @@
 		},
 		{ 
 			"name" : "Eurovision",
+			"id" : "eurovision",
 			"questions" : [
 				{ 
 					"question" : "En 2005, le pays gagnant était ...",
@@ -546,6 +548,7 @@
 		},
 		{ 
 			"name" : "James Bond",
+			"id" : "jamesbond",
 			"questions" : [
 				{ 
 					"question" : "Le générique de Dangereusement Vôtre est interprété par ...",
@@ -590,6 +593,7 @@
 		},
 		{ 
 			"name" : "Logos",
+			"id" : "logos",
 			"questions" : [
 				{ 
 					"question" : "Ce logo de boîte de distribution internationale à ...",
@@ -662,6 +666,7 @@
 	"lyrics" : [
 		{ 
 			"name" : "Teri Moise - Les Poèmes De Michelle",
+			"id" : "terimoise",
 			"questions" : [
 				{ 
 					"question" : "Michelle veut croire / En l'innocence que sa vie ne permet pas / Si jeune trop mûre / Elle connaît déjà la faim les nuits dures / Elle s'écrit une vie...",
@@ -706,6 +711,7 @@
 		},
 		{ 
 			"name" : "Géraldine - Bouge",
+			"id" : "geraldine",
 			"questions" : [
 				{ 
 					"question" : "Aux rythmes des envies d'un monde indécis...",
@@ -750,6 +756,7 @@
 		},
 		{ 
 			"name" : "Marie-Mai - Il Faut Que Tu T'en Ailles",
+			"id" : "mariemai",
 			"questions" : [
 				{ 
 					"question" : "Ta présence me dérange...",
@@ -794,6 +801,7 @@
 		},
 		{ 
 			"name" : "Fawkoju - C'est Comme Ci, C'est Comme Ca",
+			"id" : "fawkoju",
 			"questions" : [
 				{ 
 					"question" : "Il y a des jours où j'me réveille de bonne heure...",

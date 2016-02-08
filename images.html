@@ -19,17 +19,18 @@
 			<!-- #IMAGES -->
 			<div class="row" id="images">
 				<div class="col-lg-12">
-				<h3>En Images</h3>
+					<h3>En Images</h3>
+					<hr>
 					<table class="table table-striped">
 						<tbody>
 							<tr>
 								<td width="50%" ng-repeat="image in themesCtrl.images.slice(0,2)">
-									<button style="font-size:5em;" ng-click="imageUsed = !imageUsed" ng-class="{'btn-primary' :  imageUsed}" class="btn btn-bigfloat btn-lg btn-block btn-primary">{{image.name}}</button>
+									<button data-toggle="modal" data-target="#{{image.id}}" style="font-size:5em;" ng-click="imageUsed = !imageUsed" ng-class="{'btn-primary' :  imageUsed}" class="btn btn-bigfloat btn-lg btn-block btn-primary">{{image.name}}</button>
 								</td>  
 							</tr>
 							<tr>
 								<td width="50%" ng-repeat="image in themesCtrl.images.slice(2,4)">
-									<button style="font-size:5em;" ng-click="imageUsed = !imageUsed" ng-class="{'btn-primary' :  imageUsed}" class="btn btn-bigfloat btn-lg btn-block btn-primary">{{image.name}}</button>
+									<button data-toggle="modal" data-target="#{{image.id}}" style="font-size:5em;" ng-click="imageUsed = !imageUsed" ng-class="{'btn-primary' :  imageUsed}" class="btn btn-bigfloat btn-lg btn-block btn-primary">{{image.name}}</button>
 								</td>
 							</tr>
 						</tbody>
@@ -37,7 +38,37 @@
 				</div> 
 			</div>
 			<hr>
-			<div class="row" id="quiz">
+
+			<div class="modal fade" ng-repeat="image in themesCtrl.images" id="{{image.id}}">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h3>{{image.name}}</h3>
+							<ul class="nav nav-tabs list-inline">
+							  <li ng-repeat="question in image.questions" ng-class="{'active' : ($index+1)==1}"><a data-toggle="tab" href="#{{image.id}}{{$index+1}}">Question {{$index+1}}</a></li>
+							</ul>
+						</div>
+						<div class="modal-body tab-content">
+							<div class="col-lg-12 tab-pane fade" ng-repeat="question in image.questions" ng-class="{'in' : ($index+1)==1, 'active' : ($index+1)==1}" id="{{image.id}}{{$index+1}}">
+								<!-- <div class=""> -->
+								<div class="panel panel-primary">
+									<div class="panel-body" style="font-size:2.5em"><p>{{question.question}}</p></div>
+									<div class="panel-footer">
+										<button style="font-size:2.5em" ng-repeat="reponse in question.reponses" ng-click="imageFound = !imageFound" ng-class="{'btn-{{reponse.class}}' : !imageFound}" class="btn btn-block btn-lg btn-float"><p style="margin:auto;padding:auto;">{{reponse.reponse}}</p></button>
+									</div>
+								</div>
+								<hr>
+								<!-- </div> -->
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">X</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- <div class="row" id="quiz">
 				<div class="row" ng-repeat="image in themesCtrl.images">
 					<div class="col-lg-12">
 						<h3>{{image.name}}</h3>
@@ -54,16 +85,16 @@
 					<hr>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<!-- /#IMAGES -->
 		</div>
 		
 		<!-- JavaScript -->
+		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/angular.js"></script>
-		<script type="text/javascript" src="js/app.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/npm.js"></script>
-		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
 		<!-- Menu Toggle Script -->
 		<script>
 		$("#menu-toggle").click(function(e) {

@@ -22,15 +22,48 @@
 					<h3>Radio Test</h3>
 					<hr>
 				</div>
-				<div class="col-lg-4" ng-repeat="match in themesCtrl.radio.slice(0,3)">
-					<button style="font-size:3.5em;" ng-click="radioUsed = !radioUsed" ng-class="{'btn-primary' : !radioUsed}" class="btn btn-float btn-lg btn-block">{{"Match#"+match.match}}</button>
+				<div class="col-lg-12" ng-repeat="match in themesCtrl.radio">
+					<button data-toggle="modal" data-target="#radio{{match.match}}" style="font-size:2.5em;" ng-click="radioUsed = !radioUsed" ng-class="{'btn-primary' : !radioUsed}" class="btn btn-float btn-lg btn-block">{{"Match#"+match.match}}</button>
 				</div>
-				<div class="col-lg-4" ng-repeat="match in themesCtrl.radio.slice(3,6)">
+<!-- 				<div class="col-lg-4" ng-repeat="match in themesCtrl.radio.slice(3,6)">
 					<button style="font-size:3.5em;" ng-click="radioUsed = !radioUsed" ng-class="{'btn-primary' : !radioUsed}" class="btn btn-float btn-lg btn-block">{{"Match#"+match.match}}</button>
-				</div>
+				</div> -->
 			</div> 
 			<hr>
-			<div class="row">
+
+			<div class="modal fade" id="radio{{radio.match}}" ng-repeat="radio in themesCtrl.radio">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h3>{{"Match#"+radio.match}}&nbsp;<button class="btn btn-default" ng-click="radioReveal = !radioReveal"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></button></h3>
+						</div>
+						<div class="modal-body">
+							<div class="row">
+								<div class="panel panel-primary">
+									<div class="panel-body" style="font-size:1em">
+										<div class="col-lg-8">
+											<div class="row" ng-repeat="title in radio.playlist">
+												<button style="font-size:2em;" ng-click="radioPlayed = !radioPlayed" ng-class="{'btn-primary' : !radioPlayed}" class="btn btn-lg btn-block">{{radioPlayed && '#'+($index+1) || title.name}}</button>
+											</div>
+										</div>
+										<div class="col-lg-4">
+											<div class="row" ng-repeat="reponse in radio.radios">
+												<button width="200" height="200" style="font-size:3em" ng-click="radioFound = !radioFound" ng-class="{'btn-{{reponse.class}}' : !radioFound}" class="btn btn-block btn-lg btn-float"><p style="margin:auto;padding:auto;">{{!radioReveal && reponse.radio || '???'}}</p></button>
+												<hr>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">X</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+<!-- 			<div class="row">
 				<div class="row" ng-repeat="radio in themesCtrl.radio">
 					<div class="col-lg-12">
 						<h3>{{"Match#"+radio.match}}</h3>
@@ -54,16 +87,16 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<!-- /#RADIO -->
 		</div>
 		
 		<!-- JavaScript -->
+		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/angular.js"></script>
-		<script type="text/javascript" src="js/app.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/npm.js"></script>
-		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
 		<!-- Menu Toggle Script -->
 		<script>
 		$("#menu-toggle").click(function(e) {

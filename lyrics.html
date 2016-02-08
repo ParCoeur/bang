@@ -20,14 +20,44 @@
 			<div class="row" id="lyrics">
 				<div class="col-lg-12">
 					<h3>N'Oubliez Pas Les Paroles</h3>
+					<hr>
 					<div class="col-lg-12" ng-repeat="lyric in themesCtrl.lyrics">
-						<button style="font-size:3.5em;" ng-click="lyricUsed = !lyricUsed" ng-class="{'btn-info' :  !lyricUsed}" class="btn btn-float btn-lg btn-block">{{"#"+($index+1)+" : "}}{{lyricUsed && '??? - ???' || lyric.name}}</button>
-						<hr>
+						<button data-toggle="modal" data-target="#lyric{{$index+1}}" style="font-size:3.5em;" ng-click="lyricUsed = !lyricUsed" ng-class="{'btn-info' :  !lyricUsed}" class="btn btn-float btn-lg btn-block">{{"#"+($index+1)+" : "}}{{lyricUsed && '??? - ???' || lyric.name}}</button>
 					</div>
 				</div> 
 			</div>
+			<hr>
 
-			<div class="row" id="quiz">
+			<div class="modal fade" ng-repeat="lyric in themesCtrl.lyrics" id="lyric{{$index+1}}">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h3>{{lyric.name}}</h3>
+							<ul class="nav nav-tabs list-inline">
+							  <li ng-repeat="question in lyric.questions" ng-class="{'active' : ($index+1)==1}"><a data-toggle="tab" href="#{{lyric.id}}{{$index+1}}">Question {{$index+1}}</a></li>
+							</ul>
+						</div>
+						<div class="modal-body tab-content">
+							<div class="col-lg-12 tab-pane fade" ng-repeat="question in lyric.questions" ng-class="{'in' : ($index+1)==1, 'active' : ($index+1)==1}" id="{{lyric.id}}{{$index+1}}">
+								<!-- <div class=""> -->
+								<div class="panel panel-primary">
+									<div class="panel-body" style="font-size:2.5em"><p>{{question.question}}</p></div>
+									<div class="panel-footer">
+										<button style="font-size:2.5em" ng-repeat="reponse in question.reponses" ng-click="lyricFound = !lyricFound" ng-class="{'btn-{{reponse.class}}' : !lyricFound}" class="btn btn-block btn-lg btn-float"><p style="margin:auto;padding:auto;">{{reponse.reponse}}</p></button>
+									</div>
+								</div>
+								<hr>
+								<!-- </div> -->
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">X</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- <div class="row" id="quiz">
 				<div class="row" ng-repeat="lyric in themesCtrl.lyrics">
 					<div class="col-lg-12">
 						<h3>{{lyric.name}}</h3>
@@ -44,16 +74,16 @@
 						<hr>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<!-- /#LYRICS -->
 		</div>
 		
 		<!-- JavaScript -->
+		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/angular.js"></script>
-		<script type="text/javascript" src="js/app.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/npm.js"></script>
-		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
 		<!-- Menu Toggle Script -->
 		<script>
 		$("#menu-toggle").click(function(e) {
