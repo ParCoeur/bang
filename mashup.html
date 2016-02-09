@@ -21,32 +21,31 @@
 				<div class="row">
 					<div class="col-lg-12"> 
 						<h3>Mash-Up</h3>
-						<hr>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-lg-2">
+<!-- 					<div class="col-lg-2">
 						<ul class="nav nav-tabs nav-stacked">
 							<li ng-repeat="mashup in themesCtrl.mashups" ng-class="{'active' : ($index+1)==1}"><a data-toggle="tab" href="#mashup{{$index+1}}">Mash-Up {{$index+1}}</a></li>
 						</ul>
 					</div>
 					<div class="col-lg-10 tab-content">
 						<div class="row tab-pane fade" id="mashup{{$index+1}}" ng-repeat="mashup in themesCtrl.mashups" ng-class="{'in' : ($index+1)==1, 'active' : ($index+1)==1}" id="mashup{{$index+1}}">
-							<div class="col-lg-3" ng-repeat="title in mashup.titles" style="text-align:center;">
-								<button class="btn btn-lg btn-default">
-									<img src="{{'img/covers/'+title.img}}" alt="{{title.name}}">
-								</button>
-								<h5>{{title.name}}</h5>
-							</div>
-							<div class="col-lg-6">
-								{{mashup.name}}
+							<div class="row">
+								<div class="col-lg-6" ng-repeat="title in mashup.titles" style="text-align:center;">
+									<button class="btn btn-lg btn-default">
+										<img src="{{'img/covers/'+title.img}}" alt="{{title.name}}">
+									</button>
+									<hr>
+									<button ng-click="mashFound = !mashFound" ng-class="{'btn-warning' :  !mashFound}" class="btn btn-lg btn-block">{{mashFound && '?' || title.name}}</button>
+								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 				</div>
-<!-- 				<div class="col-lg-12" ng-repeat="mashup in themesCtrl.mashups">
+				<div class="col-lg-12" ng-repeat="mashup in themesCtrl.mashups">
 					<button style="font-size:1.5em;" ng-click="mashFound = !mashFound" ng-class="{'btn-warning' :  !mashFound}" class="btn btn-lg btn-block">{{mashFound && '?' || mashup.name}}</button>
-				</div> --> 
+				</div> 
 			</div>
 			<!-- /#MASHUP -->
 		</div>

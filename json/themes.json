@@ -2,6 +2,7 @@
 	"normals" : [
 		{ 
 			"name" : "Allo", 
+			"id" : "allo",
 			"class" : "primary",
 			"titles" : [
 				{ "title" : "De La Soul - Ring Ring" },
@@ -14,7 +15,8 @@
 			]
 		},
 		{ 
-			"name" : "Couples", 
+			"name" : "Couples",
+			"id" : "couples", 
 			"class" : "primary",
 			"titles" : [
 				{ "title" : "Hozier - Jackie & Wilson" },
@@ -28,6 +30,7 @@
 		},
 		{ 
 			"name" : "Bretons", 
+			"id" : "bretons",
 			"class" : "primary",
 			"titles" : [
 				{ "title" : "Matmatah - Lambe En Dro" },
@@ -41,6 +44,7 @@
 		},
 		{ 
 			"name" : "Parental",
+			"id" : "parental",
 			"class" : "primary",
 			"titles" : [
 				{ "title" : "Alain Souchon - Allo Maman Bobo" },
@@ -54,6 +58,7 @@
 		},
 		{ 
 			"name" : "Confiserie", 
+			"id" : "confiserie",
 			"class" : "info",
 			"titles" : [
 				{ "title" : "Annie Cordy - Chaud Cacao" },
@@ -66,7 +71,8 @@
 			]
 		},
 		{ 
-			"name" : "Animaux", 
+			"name" : "Animaux",
+			"id" : "animaux", 
 			"class" : "info",
 			"titles" : [
 				{ "title" : "Pow Wow - Le Chat" },
@@ -80,6 +86,7 @@
 		},
 		{ 
 			"name" : "Nein", 
+			"id" : "nein",
 			"class" : "info",
 			"titles" : [
 				{ "title" : "2 Unlimited - No Limit" },
@@ -93,6 +100,7 @@
 		},
 		{ 
 			"name" : "Chipmunks", 
+			"id" : "chipmunks",
 			"class" : "info",
 			"titles" : [
 				{ "title" : "Otis Redding - Sittin On The Dock Of A Bay" },
@@ -106,6 +114,7 @@
 		},
 		{ 
 			"name" : "Berceuses",
+			"id" : "berceuses",
 			"class" : "danger",
 			"titles" : [
 				{ "title" : "The Jackson Five - ABC" },
@@ -119,6 +128,7 @@
 		},
 		{ 
 			"name" : "Aquatique",
+			"id" : "aquatique",
 			"class" : "danger",
 			"titles" : [
 				{ "title" : "Yaël Naim - Go To The River" },
@@ -132,6 +142,7 @@
 		},
 		{ 
 			"name" : "Jeux",
+			"id" : "jeux",
 			"class" : "danger",
 			"titles" : [
 				{ "title" : "The Cardigans - My Favourite Game" },
@@ -145,6 +156,7 @@
 		},
 		{ 
 			"name" : "Santé", 
+			"id" : "sante",
 			"class" : "danger",
 			"titles" : [
 				{ "title" : "Serge Lama - Je Suis Malade" },
@@ -157,7 +169,8 @@
 			]
 		},
 		{ 
-			"name" : "Noir", 
+			"name" : "Noir",
+			"id" : "noir", 
 			"class" : "warning",
 			"titles" : [
 				{ "title" : "Black M - Sur Ma Route" },
@@ -170,7 +183,8 @@
 			]
 		},
 		{ 
-			"name" : "Thunasse", 
+			"name" : "Thunasse",
+			"id" : "thunasse", 
 			"class" : "warning",
 			"titles" : [
 				{ "title" : "Téléphone - Argent Trop Cher" },
@@ -184,6 +198,7 @@
 		},
 		{ 
 			"name" : "Amerique", 
+			"id" : "amerique",
 			"class" : "warning",
 			"titles" : [
 				{ "title" : "Green Day - American Idiot" },
@@ -197,6 +212,7 @@
 		},
 		{ 
 			"name" : "Magie", 
+			"id" : "magie",
 			"class" : "warning",
 			"titles" : [
 				{ "title" : "Queen - A Kind Of Magic" },
@@ -209,7 +225,8 @@
 			]
 		},
 		{ 
-			"name" : "Miss", 
+			"name" : "Miss",
+			"id" : "miss", 
 			"class" : "success",
 			"titles" : [
 				{ "title" : "Miss Dominique - Puisque Tu me vois D'En Haut" },
@@ -223,6 +240,7 @@
 		},
 		{ 
 			"name" : "Ecolo", 
+			"id" : "ecolo",
 			"class" : "success",
 			"titles" : [
 				{ "title" : "Tryo - L'Hymne De Nos Campagnes" },
@@ -236,6 +254,7 @@
 		},
 		{ 
 			"name" : "Voyages", 
+			"id" : "voyages",
 			"class" : "success",
 			"titles" : [
 				{ "title": "Passenger - Let Her Go" },
@@ -249,6 +268,7 @@
 		},
 		{ 
 			"name" : "Disney",
+			"id" : "disney",
 			"class" : "success",
 			"titles" : [
 				{ "title" : "La Reine Des Neiges" },
