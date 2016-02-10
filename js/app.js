@@ -16,6 +16,7 @@
 		bang.pistes		= [];
 		bang.lyrics     = [];
 		bang.radio    	= [];
+		bang.trads 		= [];
 
 		$http.get('json/themes.json').success(function(data){
 			bang.normals  = data.normals;
@@ -26,6 +27,7 @@
 			bang.pistes   = data.pistes;
 			bang.lyrics   = data.lyrics;
 			bang.radio    = data.radio;
+			bang.trads 	  = data.trads;
 		});
 
 		$scope.toggle 	   = true;
@@ -34,6 +36,7 @@
 		$scope.imageFound  = true;
 		$scope.finalUsed   = true;
 		$scope.mashFound   = true;
+		$scope.mashTitleFound = false;
 		$scope.stemFound   = true;
 		$scope.titleFound  = true;
 		$scope.lyricUsed   = true;
@@ -42,6 +45,8 @@
 		$scope.radioFound  = true;
 		$scope.radioPlayed = true;
 		$scope.radioReveal = true;
+		$scope.tradFound   = true;
+		$scope.tradUsed	   = true;
 
 		var initTime = 30
 
@@ -53,6 +58,10 @@
 		$scope.teamStarter = "";
 		$scope.timerStarted = false;
 		$scope.timerPaused = false;
+
+		$scope.showImage = function() {
+		  	$scope.show = !$scope.show;
+	  	}
 
 		$scope.resetTimer = function() {
 			$scope.timers[0].pause();

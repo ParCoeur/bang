@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="ng-scope" ng-app="bangModule">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="favicon.ico">
+		<title>BANG 2.0 | Traduction de Chansons</title>
+		<!-- Bootstrap Core CSS -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<!-- Custom CSS -->
+		<link href="css/simple-sidebar.css" rel="stylesheet">
+	</head>
+	<body ng-controller="ThemesController as themesCtrl">
+		<div id="wrapper">
+			<ng-include src="'navbar.html'"></ng-include>
+			<!-- #TRADUCTION -->
+			<div class="row" id="traduction">
+				<div class="col-lg-12">
+					<h3>Traduction de Chansons</h3>
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-lg-12">
+					<button data-toggle="modal" data-target="#trad{{$index+1}}" style="font-size:1.3em;" class="btn btn-lg btn-block btn-float" ng-repeat="trad in themesCtrl.trads">{{'Traduction #'+($index+1)}}</button>
+				</div>
+			</div>
+
+			<div class="modal fade" ng-repeat="trad in themesCtrl.trads" id="trad{{$index+1}}">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h3>{{'Traduction #'+($index+1)}}</h3>
+							<ul class="nav nav-tabs list-inline">
+							 	<li class="active"><a data-toggle="tab" href="#trad{{$index+1}}">Trad</a></li>
+							 	<li><a data-toggle="tab" href="#lyrics{{$index+1}}">Paroles</a></li>
+							</ul>
+							<hr>
+						</div>
+						<div class="modal-body tab-content">
+							<div class="panel tab-pane fade panel-info active in" id="trad{{$index+1}}">
+								<div class="panel-heading" style="font-size:1.5em;">Paroles Traduites</div>
+								<div class="panel-body" style="font-size:1.5em;"><p>{{trad.traduction}}</p></div>
+							</div>
+							<div class="panel tab-pane fade panel-info" id="lyrics{{$index+1}}">
+								<div class="panel-heading" style="font-size:1.5em;">Vraies Paroles</div>
+								<div class="panel-body" style="font-size:1.5em;"><p>{{trad.lyrics}}</p></div>
+								<div class="panel-footer" style="text-align:center;font-size:1.5em;">{{trad.name}}</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">X</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- /#TRADUCTION -->
+		</div>
+		
+		<!-- JavaScript -->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/angular.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/npm.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<!-- Menu Toggle Script -->
+		<script>
+		$("#menu-toggle").click(function(e) {
+			e.preventDefault();
+			$("#wrapper").toggleClass("toggled");
+		});
+		</script>
+	</body>
+</html>

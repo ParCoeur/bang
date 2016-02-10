@@ -1045,14 +1045,42 @@
 			]
 		}
 	],
-	"traduction" : [
-		{ "name" : "Marina Kaye - Homeless" },
-		{ "name" : "John Legend - All Of Me" },
-		{ "name" : "Jeanette - Porque Te Vas" },
-		{ "name" : "The Beatles - Come Together" },
-		{ "name" : "Ben Harper - With My Own Two Hands" },
-		{ "name" : "Public Enemy - Bring The Noise" },
-		{ "name" : "Christine And The Queens - Saint Claude" }
+	"trads" : [
+		{ 
+			"name" : "Marina Kaye - Homeless",
+			"traduction" : "Dans ce lit où je repose / Je suis sans foyer / Cette maison que je connais tellement / Mais je suis sans foyer / Ma faim, elle grandit / Et elle ne me laissera pas / Et ça brûle dans ma poitrine / Je suis sans foyer",
+			"lyrics" : "In this bed where I rest / I'm homeless / This house I know best / But I'm homeless / My hunger it grows / And it won't let me go / And it burns in my chest / I'm homeless "
+		},
+		{ 
+			"name" : "John Legend - All Of Me",
+			"traduction" : "Parce que mon être entier / Aime tout de toi / Aime tes courbes et tous tes contours / Toutes tes parfaites imperfections / Donne-toi à moi toute entière / Je te donnerai tout de moi / Tu es ma fin et mon commencement / Même quand je perds je gagne / Parce que je te donne tout... de moi / Et tu me donnes tout... de toi",
+			"lyrics" : "‘Cause all of me / Loves all of you / Loves your curves and all your edges / All your perfect imperfections / Give your all to me / I’ll give my all to you / You’re my end and my beginning / Even when I lose I’m winning / ‘Cause I give you all... of me / And you give me all... of you"
+		},
+		{ 
+			"name" : "Jeanette - Porque Te Vas",
+			"traduction" : "Toutes les promesses de mon amour s'en iront avec toi / Tu m'oublieras, tu m'oublieras / Près de la gare je pleurerai comme un enfant, / Parce que tu pars",
+			"lyrics" : "Todas las promesas de mi amor se irán contigo / Me olvidarás, me olvidarás / Junto a la estación lloraré igual que un niño, / Porque te vas"	
+		},
+		{ 
+			"name" : "The Beatles - Come Together",
+			"traduction" : "Il ne cire pas ses godasses, il s'est esquinté les orteils à force de jouer au football / Il a la main branlante, il se shoote à la coke / Il dit « je te connais, tu me connais » / Tout ce que je peux te dire c'est que tu dois être libre / Rassemblez-vous tous, maintenant, avec moi",
+			"lyrics" : "He wears no shoeshine he got toe-jam football / He got monkey finger he shoot coca-cola / He says, I know you, you know me / One thing I can tell you is you got to be free / Come together right now over me"
+		},
+		{ 
+			"name" : "Ben Harper - With My Own Two Hands",
+			"traduction" : "Je vais faire un endroit plus clair / Je vais faire un endroit plus sécurisant / Je vais aider la race humaine / Avec mes propres / Avec mes deux propres main",
+			"lyrics" : "I'm gonna make it a brighter place / I'm gonna make it a safer place / I'm gonna help the human race / With my own / With my own two hands"
+		},
+		{
+			"name" : "Public Enemy - Bring The Noise",
+			"traduction" : "Basse ! Jusqu'où tu peux descendre / Couloir de la mort. Quel frère connait / Une fois de plus, l'incroyable est de retour / L'animal à rimes / L'incroyable D Ennemi public n°1 / Les flics me disent 'Ne bougez plus ! ' et je reste transi / Est ce que peux leur dire que je n'ai vraiment jamais eu de flingue",
+			"lyrics" : "Bass ! How low can you go ? / Death row. What a brother knows. / Once again, back is the incredible / The rhyme animal / The incredible D, Public Enemy Number One / 'Five-O' said, 'Freeze !'' and I got numb / Can I tell 'em that I really never had a gun ?"
+		},
+		{ 
+			"name" : "Christine And The Queens - Saint Claude",
+			"traduction" : "Voilà ma station / Voilà ma station / Mais si tu dis juste un mot je resterai avec toi",
+			"lyrics" : "Here's my station / Here's my station / Ouh ouh... / But if you say just one word I'll stay with you..."
+		}
 	],
 	"radio" : [
 		{ 
