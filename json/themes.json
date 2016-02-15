@@ -301,177 +301,67 @@
 	],
 	"finales" : [
 		{ 
-			"name" : "Animes", 
+			"name" : "Séries TV", 
 			"class" : "primary",
 			"titles" : [
-				{ "title" : "Vision d'Escaflowne" },
-				{ "title" : "Dragon Ball" },
-				{ "title" : "Evangelion" },
-				{ "title" : "Goldorak" },
-				{ "title" : "Naruto" },
-				{ "title" : "Les Chevaliers Du Zodiaque" },
-				{ "title" : "Candy" },
-				{ "title" : "One Piece" },
-				{ "title" : "Heidi" },
-				{ "title" : "Nicky Larson" },
-				{ "title" : "Sailor Moon" },
-				{ "title" : "GTO" },
-				{ "title" : "Full Metal Alchemist" },
-				{ "title" : "Ranma 1/2" },
-				{ "title" : "Jeanne Et Serge" }
+				{ "title" : "Remy Zero - Save Me", "name" : "Smallville" },
+				{ "title" : "Ryan Star - Brand New Day", "name" : "Lie To Me" },
+				{ "title" : "Faf Larage - Pas Le Temps", "name" : "Prison Break" },
+				{ "title" : "Victoria Petrosillo - Le Heros d'Un Autre", "name" : "Heroes" },
+				{ "title" : "The Rembrandts - I'll Be There For You", "name" : "Friends" },
+				{ "title" : "Jimi Jamison - I'm Always Here", "name" : "Alerte A Malibu" },
+				{ "title" : "The Solids - Hey Beautiful", "name" : "How I Met Your Mother" },
+				{ "title" : "The 88 - Always I Was Here", "name" : "Community" },
+				{ "title" : "Love Split Love - How Soon Is Now", "name" : "Charmed" },
+				{ "title" : "Will Smith - Fresh Prince Of Bel Air", "name" : "Le Prince de Bel-Air" }
 			]
 		},
 		{ 
-			"name" : "BO", 
-			"class" : "success",
-			"titles" : [
-				{ 
-					"title" : "R Kelly - I Believe I Can Fly", 
-					"origin" : "(Space Jam)" 
-				},
-				{ 
-					"title" : "Kenny Loggins - Highway To The Danger Zone", 
-					"origin" : "(Top Gun)" 
-				},
-				{ 
-					"title" : "Ellie Goulding - Love Me Like You Do", 
-					"origin" : "(50 Shades Of Grey)" 
-				},
-				{ 
-					"title" : "Kavinsky - Nightcall", 
-					"origin" : "(Drive)" 
-				},
-				{ 
-					"title" : "Whitney Houston - I Will Always Love You", 
-					"origin" : "(Bodyguard)" 
-				},
-				{ 
-					"title" : "Bryan Adams - Everything I Do", 
-					"origin" : "(Robin Des Bois, Prince Des Voleurs)" 
-				},
-				{ 
-					"title" : "Kanye West & Jay-Z - No Church In The Wild", 
-					"origin" : "(Gatsby Le Magnifique)" 
-				},
-				{ 
-					"title" : "Michael Sambello - Maniac",
-					"origin" : "(Flashdance)" 
-				},
-				{ 
-					"title" : "Sam Smith - Writing's On The Wall", 
-					"origin" : "(Spectre)" 
-				},
-				{ 
-					"title" : "Will Smith - Wild Wild West", 
-					"origin" : "(Wild Wild West)" 
-				},
-				{ 
-					"title" : "Elton John - Can You Feel The Love Tonight", 
-					"origin" : "(Le Roi Lion)" 
-				},
-				{ 
-					"title" : "Chimène Badi - Le Jour D'Après", 
-					"origin" : "(Le Jour d'Après)" 
-				},
-				{ 
-					"title" : "Eddie Vedder - Guaranteed", 
-					"origin" : "(Into The Wild)" 
-				},
-				{ 
-					"title" : "Underworld - Born Slippy (Nuxx)", 
-					"origin" : "(Trainspotting)" 
-				},
-				{ 
-					"title" : "Bruce Springsteen - Streets Of Philadelphia", 
-					"origin" : "(Philadelphia)" 
-				}
-			]
-		},
-		{ 
-			"name" : "Duos", 
-			"class" : "danger",
-			"titles" : [
-				{ "title" : "Calogero & Cats On Trees - Jimmy" },
-				{ "title" : "Robbie Williams & Nicole Kidman - Something Stupid" },
-				{ "title" : "Michael Jackson & Paul McCartney - Say Say Say" },
-				{ "title" : "Florent Pagny & Cecilia - L'Air Du Temps" },
-				{ "title" : "Renaud & Axelle Red - Manhattan Kaboul" },
-				{ "title" : "Jay-Z & Kanye West - Nigga In Paris" },
-				{ "title" : "James Blunt & Sinik - Je Réalise" },
-				{ "title" : "Justin Timberlake & Madonna - 4 Minutes" },
-				{ "title" : "Mauranne & Lara Fabian - Tu Es Mon Autre" },
-				{ "title" : "Jimmy Cliff & Bernard Lavilliers - Melody" },
-				{ "title" : "Garou & Céline Dion - Sous Le Vent" },
-				{ "title" : "Pete Yorn & Scarlett Johansson - Relator" },
-				{ "title" : "Pascal Obispo & Zazie - Les Meilleurs Ennemis" },
-				{ "title" : "Gainsbourg & Bardot - Bonnie & Clyde" },
-				{ "title" : "Andrea Boccelli & Hélène Ségara - Vivo Per Lei" }
-			]
-		},
-		{ 
-			"name" : "Reprises (by MSN)", 
+			"name" : "Boys Band", 
 			"class" : "warning",
 			"titles" : [
-				{ 
-					"title" : "The Braids - Bohemian Rhapsody", 
-					"origin" : "(Queen)" 
-				},
-				{ 
-					"title" : "Brigitte - Ma Benz", 
-					"origin" : "(Suprême NTM)" 
-				},
-				{ 
-					"title" : "Madelyn Bailey - Radioactive", 
-					"origin" : "(Imagine Dragons)" 
-				},
-				{ 
-					"title" : "Felix Jaehn - Ain't Nobody", 
-					"origin" : "(Chaka Khan)" 
-			    },
-				{ 
-					"title" : "Alanis Morissette - Crazy", 
-					"origin" : "(Seal)" 
-				},
-				{ 
-					"title" : "Emeli Sandé - Crazy In Love", 
-					"origin" : "(Beyoncé)" 
-				},
-				{ 
-					"title" : "Coolio - Gangsta Paradise", 
-					"origin" : "(Stevie Wonder)" 
-				},
-				{ 
-					"title" : "La Pompe Moderne - Plus Dur, Meilleur, Plus Rapide, Plus Fort", 
-					"origin" : "(Daft Punk)" 
-				},
-				{ 
-					"title" : "Los Colorados - Hot & Cold", 
-					"origin" : "(Katy Perry)" 
-				},
-				{ 
-					"title" : "Sidabitball - La Mauvaise Réputation", 
-					"origin" : "(George Brassens)" 
-				},
-				{ 
-					"title" : "The Baseballs - Umbrella", 
-					"origin" : "(Rihanna)" 
-				},
-				{ 
-					"title" : "Nolwenn Leroy - Moonlight Shadow", 
-					"origin" : "(Mike Oldfield)" 
-				},
-				{ 
-					"title" : "Filter - Happy Together", 
-					"origin" : "(The Turtles)"
-				},
-				{ 
-					"title" : "Stereo Total - Joe Le Taxi", 
-					"origin" : "(Vanessa Paradis)" 
-				},
-				{ 
-					"title" : "Vanessa Paradis - Take A Walk On The Wild Side", 
-					"origin" : "(Lou Reed)"
-				}
+				{ "title" : "2 Be 3 - Partir Un Jour", "name" : "2 Be 3" },
+				{ "title" : "Alliage - Le Temps Qui Court", "name" : "Alliage" },
+				{ "title" : "Boyzone - Picture Of You", "name" : "Boyzone" },
+				{ "title" : "G-Squad - Raide Dingue De Toi","name" : "G-Squad" },
+				{ "title" : "Worlds Apart - Everlasting Love", "name" : "Worlds Apart" },
+				{ "title" : "Blue - All Rise", "name" : "Blue" },
+				{ "title" : "East 17 - Alright", "name" : "East 17" },
+				{ "title" : "The Wanted - Glad You Came", "name" : "The Wanted" },
+				{ "title" : "New Kids On The Block - Step By Step", "name" : "New Kids On The Block" },
+				{ "title" : "Backstreet Boys - Everybody", "name" : "Backstreet Boys" }
+			]
+		},
+		{ 
+			"name" : "Prénoms", 
+			"class" : "danger",
+			"titles" : [
+				{ "title" : "Toto - Rosanna", "name" : "Rosanna" },
+				{ "title" : "Pascal Obispo - Lucie", "name" : "Lucie" },
+				{ "title" : "Jean-Pascal - L'Agitateur", "name" : "Jean-Pascal" },
+				{ "title" : "Eminem - Stan", "name" : "Stan" },
+				{ "title" : "Khaled - Aicha", "name" : "Aicha" },
+				{ "title" : "Francois Feldman - Joy", "name" : "Joy" },
+				{ "title" : "Alt-J - Matilda", "name" : "Matilda" },
+				{ "title" : "Saian Supa Crew - Angela", "name" : "Angela" },
+				{ "title" : "Creedence Clearwater Revival - Susie Q", "name" : "Susie" },
+				{ "title" : "Moriarty - Jimmy", "name" : "Jimmy" }
+			]
+		},
+		{ 
+			"name" : "Villes", 
+			"class" : "success",
+			"titles" : [
+				{ "title" : "Radio Moscow - 250 Miles", "name" : "Moscou" },
+				{ "title" : "London Grammar - Wasting My Young Years", "name" : "Londres" },
+				{ "title" : "IAM - Bad Boys De Marseille", "name" : "Marseille" },
+				{ "title" : "Berlin - Take My Breath Away", "name" : "Berlin" },
+				{ "title" : "Eddy Mitchell - Sur La Route De Memphis", "name" : "Memphis" },
+				{ "title" : "Jacques Dutronc - Il Est 5h, Paris S'Eveille", "name" : "Paris" },
+				{ "title" : "Jacques Brel - Dans Le Port D'Amsterdam", "name" : "Amsterdam" },
+				{ "title" : "Sting - Englishman In New York", "name" : "New York" },
+				{ "title" : "Murray Head - One Night In Bangkok", "name" : "Bangkok" },
+				{ "title" : "Luis Mariano - Mexico", "name" : "Mexico" }
 			]
 		}
 	],
@@ -1048,38 +938,101 @@
 	"trads" : [
 		{ 
 			"name" : "Marina Kaye - Homeless",
-			"traduction" : "Dans ce lit où je repose / Je suis sans foyer / Cette maison que je connais tellement / Mais je suis sans foyer / Ma faim, elle grandit / Et elle ne me laissera pas / Et ça brûle dans ma poitrine / Je suis sans foyer",
-			"lyrics" : "In this bed where I rest / I'm homeless / This house I know best / But I'm homeless / My hunger it grows / And it won't let me go / And it burns in my chest / I'm homeless "
+			"country" : "fr",
+			"lyrics" : [
+				{ 
+					"lyric" : "Dans ce lit où je repose <br> Je suis sans foyer <br> Cette maison que je connais tellement <br> Mais je suis sans foyer <br> Ma faim, elle grandit <br> Et elle ne me laissera pas <br> Et ça brûle dans ma poitrine <br> Je suis sans foyer", 
+					"trad" : true
+				},
+				{
+					"lyric" : "In this bed where I rest <br> I'm homeless <br> This house I know best <br> But I'm homeless <br> My hunger it grows <br> And it won't let me go <br> And it burns in my chest <br> I'm homeless",
+					"trad" : false
+				}
+			]
 		},
 		{ 
 			"name" : "John Legend - All Of Me",
-			"traduction" : "Parce que mon être entier / Aime tout de toi / Aime tes courbes et tous tes contours / Toutes tes parfaites imperfections / Donne-toi à moi toute entière / Je te donnerai tout de moi / Tu es ma fin et mon commencement / Même quand je perds je gagne / Parce que je te donne tout... de moi / Et tu me donnes tout... de toi",
-			"lyrics" : "‘Cause all of me / Loves all of you / Loves your curves and all your edges / All your perfect imperfections / Give your all to me / I’ll give my all to you / You’re my end and my beginning / Even when I lose I’m winning / ‘Cause I give you all... of me / And you give me all... of you"
+			"country" : "us",
+			"lyrics" : [
+				{ 
+					"lyric" : "Parce que mon être entier <br> Aime tout de toi <br> Aime tes courbes et tous tes contours <br> Toutes tes parfaites imperfections <br> Donne-toi à moi toute entière <br> Je te donnerai tout de moi <br> Tu es ma fin et mon commencement <br> Même quand je perds je gagne <br> Parce que je te donne tout... de moi <br> Et tu me donnes tout... de toi",
+					"trad" : true
+				},
+				{
+					"lyric" : "‘Cause all of me <br> Loves all of you <br> Loves your curves and all your edges <br> All your perfect imperfections <br> Give your all to me <br> I’ll give my all to you <br> You’re my end and my beginning <br> Even when I lose I’m winning <br> ‘Cause I give you all... of me <br> And you give me all... of you",
+					"trad" : false
+				}
+			]
 		},
 		{ 
 			"name" : "Jeanette - Porque Te Vas",
-			"traduction" : "Toutes les promesses de mon amour s'en iront avec toi / Tu m'oublieras, tu m'oublieras / Près de la gare je pleurerai comme un enfant, / Parce que tu pars",
-			"lyrics" : "Todas las promesas de mi amor se irán contigo / Me olvidarás, me olvidarás / Junto a la estación lloraré igual que un niño, / Porque te vas"	
+			"country" : "es",
+			"lyrics" : [
+				{ 
+					"lyric" : "Toutes les promesses de mon amour s'en iront avec toi <br> Tu m'oublieras, tu m'oublieras <br> Près de la gare je pleurerai comme un enfant, <br> Parce que tu pars",
+					"trad" : true
+				},
+				{
+					"lyric" : "Todas las promesas de mi amor se irán contigo <br> Me olvidarás, me olvidarás <br> Junto a la estación lloraré igual que un niño, <br> Porque te vas",
+					"trad" : false
+				}
+			]
 		},
 		{ 
 			"name" : "The Beatles - Come Together",
-			"traduction" : "Il ne cire pas ses godasses, il s'est esquinté les orteils à force de jouer au football / Il a la main branlante, il se shoote à la coke / Il dit « je te connais, tu me connais » / Tout ce que je peux te dire c'est que tu dois être libre / Rassemblez-vous tous, maintenant, avec moi",
-			"lyrics" : "He wears no shoeshine he got toe-jam football / He got monkey finger he shoot coca-cola / He says, I know you, you know me / One thing I can tell you is you got to be free / Come together right now over me"
+			"country" : "uk",
+			"lyrics" : [
+				{ 
+					"lyric" : "Il ne cire pas ses godasses, il s'est esquinté les orteils à force de jouer au football <br> Il a la main branlante, il se shoote à la coke <br> Il dit « je te connais, tu me connais » <br> Tout ce que je peux te dire c'est que tu dois être libre <br> Rassemblez-vous tous, maintenant, avec moi",
+					"trad" : true
+				},
+				{
+					"lyric" : "He wears no shoeshine he got toe-jam football <br> He got monkey finger he shoot coca-cola <br> He says, I know you, you know me <br> One thing I can tell you is you got to be free <br> Come together right now over me",
+					"trad" : false
+				}
+			]
 		},
 		{ 
 			"name" : "Ben Harper - With My Own Two Hands",
-			"traduction" : "Je vais faire un endroit plus clair / Je vais faire un endroit plus sécurisant / Je vais aider la race humaine / Avec mes propres / Avec mes deux propres main",
-			"lyrics" : "I'm gonna make it a brighter place / I'm gonna make it a safer place / I'm gonna help the human race / With my own / With my own two hands"
+			"country" : "us",
+			"lyrics" : [
+				{ 
+					"lyric" : "Je vais faire un endroit plus clair <br> Je vais faire un endroit plus sécurisant <br> Je vais aider la race humaine <br> Avec mes propres <br> Avec mes deux propres main",
+					"trad" : true
+				},
+				{
+					"lyric" : "I'm gonna make it a brighter place <br> I'm gonna make it a safer place <br> I'm gonna help the human race <br> With my own <br> With my own two hands",
+					"trad" : false
+				}
+			]
 		},
 		{
 			"name" : "Public Enemy - Bring The Noise",
-			"traduction" : "Basse ! Jusqu'où tu peux descendre / Couloir de la mort. Quel frère connait / Une fois de plus, l'incroyable est de retour / L'animal à rimes / L'incroyable D Ennemi public n°1 / Les flics me disent 'Ne bougez plus ! ' et je reste transi / Est ce que peux leur dire que je n'ai vraiment jamais eu de flingue",
-			"lyrics" : "Bass ! How low can you go ? / Death row. What a brother knows. / Once again, back is the incredible / The rhyme animal / The incredible D, Public Enemy Number One / 'Five-O' said, 'Freeze !'' and I got numb / Can I tell 'em that I really never had a gun ?"
+			"country" : "us",
+			"lyrics" : [
+				{ 
+					"lyric" : "Basse ! Jusqu'où tu peux descendre <br> Couloir de la mort. Quel frère connait <br> Une fois de plus, l'incroyable est de retour <br> L'animal à rimes <br> L'incroyable D Ennemi public n°1 <br> Les flics me disent 'Ne bougez plus ! ' et je reste transi <br> Est ce que peux leur dire que je n'ai vraiment jamais eu de flingue",
+					"trad" : true
+				},
+				{
+					"lyric" : "Bass ! How low can you go ? <br> Death row. What a brother knows. <br> Once again, back is the incredible <br> The rhyme animal <br> The incredible D, Public Enemy Number One <br> 'Five-O' said, 'Freeze !'' and I got numb <br> Can I tell 'em that I really never had a gun ?",
+					"trad" : false
+				}
+			]
 		},
 		{ 
 			"name" : "Christine And The Queens - Saint Claude",
-			"traduction" : "Voilà ma station / Voilà ma station / Mais si tu dis juste un mot je resterai avec toi",
-			"lyrics" : "Here's my station / Here's my station / Ouh ouh... / But if you say just one word I'll stay with you..."
+			"country" : "fr",
+			"lyrics" : [
+				{ 
+					"lyric" : "Voilà ma station <br> Voilà ma station <br> Mais si tu dis juste un mot je resterai avec toi",
+					"trad" : true
+				},
+				{
+					"lyric" : "Here's my station <br> Here's my station <br> Ouh ouh... <br> But if you say just one word I'll stay with you...",
+					"trad" : false
+				}
+			]
 		}
 	],
 	"radio" : [
@@ -1168,6 +1121,78 @@
 			]
 		}
 	],
-	"deaf" : [
+	"deafs" : [
+		{
+			"artist" : "One Direction",
+			"title" : "Torn",
+			"choices" : [
+				{ "choice" : "Torn (Reprise de Nathalie Imbruglia)", "class" : "success" },
+				{ "choice" : "FourFiveSeconds (Reprise de Rihanna, Kanye West et Paul McCartney)", "class" : "danger" }
+			]
+		},
+		{
+			"artist" : "Les Innocents",
+			"title" : "Un Monde Parfait",
+			"choices" : [
+				{ "choice" : "Un Monde Parfait", "class" : "success" },
+				{ "choice" : "L'Autre Finistère", "class" : "danger" }
+			]
+		},
+		{
+			"artist" : "Izia",
+			"title" : "Let Me Alone",
+			"choices" : [
+				{ "choice" : "Boys Don't Cry (Reprise de The Cure)", "class" : "danger" },
+				{ "choice" : "Let Me Alone", "class" : "success" }
+			]
+		},
+		{
+			"artist" : "Casting de Glee",
+			"title" : "Some Nights",
+			"choices" : [
+				{ "choice" : "It's Time (Reprise de Imagine Dragons)", "class" : "danger" },
+				{ "choice" : "Some Nights (Reprise de Fun)", "class" : "success" }
+			]
+		},
+		{
+			"artist" : "Sia",
+			"title" : "Alive",
+			"choices" : [
+				{ "choice" : "Fire Meets Gasoline", "class" : "danger" },
+				{ "choice" : "Alive", "class" : "success" }
+			]
+		},
+		{
+			"artist" : "Eddie Vedder",
+			"title" : "Guaranteed",
+			"choices" : [
+				{ "choice" : "Guaranteed", "class" : "success" },
+				{ "choice" : "Water On Road", "class" : "danger" }
+			]
+		},
+		{
+			"artist" : "Nekfeu",
+			"title" : "On Verra",
+			"choices" : [
+				{ "choice" : "Plume", "class" : "danger" },
+				{ "choice" : "On Verra", "class" : "success" }
+			]
+		},
+		{
+			"artist" : "C2C",
+			"title" : "Superstition",
+			"choices" : [
+				{ "choice" : "Superstition (Remix de Stevie Wonder)", "class" : "success" },
+				{ "choice" : "Down The Road (Remix d'eux-même)", "class" : "danger" }
+			]
+		},
+		{
+			"artist" : "Florence + The Machine",
+			"title" : "Take Care",
+			"choices" : [
+				{ "choice" : "Take Care (Reprise de Rihanna et Drake)", "class" : "success" },
+				{ "choice" : "What's My Name (Reprise de Rihanna et Drake)", "class" : "danger" }
+			]
+		}
 	]
 }

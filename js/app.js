@@ -17,6 +17,7 @@
 		bang.lyrics     = [];
 		bang.radio    	= [];
 		bang.trads 		= [];
+		bang.deafs		= [];
 
 		$http.get('json/themes.json').success(function(data){
 			bang.normals  = data.normals;
@@ -28,6 +29,7 @@
 			bang.lyrics   = data.lyrics;
 			bang.radio    = data.radio;
 			bang.trads 	  = data.trads;
+			bang.deafs	  = data.deafs;
 		});
 
 		$scope.toggle 	   = true;
@@ -45,8 +47,12 @@
 		$scope.radioFound  = true;
 		$scope.radioPlayed = true;
 		$scope.radioReveal = true;
-		$scope.tradFound   = true;
-		$scope.tradUsed	   = true;
+		$scope.tradFound   = false;
+		$scope.tradUsed	   = false;
+		$scope.tradClue	   = false;
+		$scope.deafFound   = false;
+		$scope.pisteFound  = false;
+		$scope.stemUsed    = false;
 
 		var initTime = 30
 
@@ -61,6 +67,10 @@
 
 		$scope.showImage = function() {
 		  	$scope.show = !$scope.show;
+	  	}
+
+	  	$scope.showTrad = function() {
+	  		$scope.trad = !$scope.trad;
 	  	}
 
 		$scope.resetTimer = function() {

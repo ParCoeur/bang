@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" class="ng-scope" ng-app="bangModule">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="favicon.ico">
+		<title>BANG 2.0 | La Finale</title>
+		<!-- Bootstrap Core CSS -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<!-- Custom CSS -->
+		<link href="css/simple-sidebar.css" rel="stylesheet">
+	</head>
+	<body ng-controller="ThemesController as themesCtrl">
+		<div id="wrapper">
+			<ng-include src="'navbar.html'"></ng-include>
+			<!-- #FINALE -->
+			<div class="row" id="finale">
+				<div class="col-lg-12">
+					<h3>La Finale</h3>
+					<hr>
+					<table class="table table-striped">
+						<tbody>
+							<tr>
+								<td width="50%" ng-repeat="finale in themesCtrl.finales.slice(0,2)">
+									<button data-toggle="modal" data-target="#finale{{$index+1}}" style="font-size:5em;" ng-click="finalUsed = !finalUsed" ng-class="{'btn-{{finale.class}}' : finalUsed}" class="btn btn-bigfloat btn-lg btn-block">{{finale.name}}</button>
+								</td>  
+							</tr>
+							<tr>
+								<td width="50%" ng-repeat="finale in themesCtrl.finales.slice(2,4)">
+									<button data-toggle="modal" data-target="#finale{{$index+3}}" style="font-size:5em;" ng-click="finalUsed = !finalUsed" ng-class="{'btn-{{finale.class}}' : finalUsed}" class="btn btn-bigfloat btn-lg btn-block">{{finale.name}}</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="modal fade" ng-repeat="finale in themesCtrl.finales" id="finale{{$index+1}}">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h3>{{finale.name}}</h3>
+							<hr>
+							<ul class="nav nav-pills list-inline">
+								<li ng-repeat="title in finale.titles" ng-class="{'active' : ($index+1)==1}"><a data-toggle="tab" href="#{{finale.class}}{{$index+1}}">{{$index+1}}#</a></li>
+							</ul>
+						</div>
+						<div class="modal-body tab-content">
+							<div class="row tab-pane fade" ng-repeat="title in finale.titles" id="{{finale.class}}{{$index+1}}" ng-class="{'in' : ($index+1)==1, 'active' : ($index+1)==1}">
+								<div class="col-lg-12">
+									<div class="row">
+										<div class="col-lg-5">
+											<button class="btn btn-lg" ng-click="finaleFound = !finaleFound" ng-class="{'btn-{{finale.class}}' : finaleFound==true}" style="font-size:3em;width:440px;height:440px;"><span ng-hide="finaleFound">{{($index+1)}}#</span><img ng-show="finaleFound" ng-src="img/finales/{{finale.class}}/{{finale.class}}-{{$index+1}}.jpg"></button>
+										</div>
+										<div class="col-lg-7">
+											<div class="row">
+												<button class="btn btn-lg btn-block btn-float" style="font-size:2.5em;" ng-class="{'btn-{{finale.class}}' : finaleFound==true}">{{!finaleFound && '???' || title.name }}</button>
+											</div>
+											<hr>
+											<div class="row">
+												<button class="btn btn-lg btn-block btn-float" style="font-size:2em;" ng-class="{'btn-{{finale.class}}' : finaleFound==true}">{{!finaleFound && '???' || title.title }}</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">X</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /#FINALE -->
+		</div>
+		
+		<!-- JavaScript -->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/angular.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/npm.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<!-- Menu Toggle Script -->
+		<script>
+		$("#menu-toggle").click(function(e) {
+			e.preventDefault();
+			$("#wrapper").toggleClass("toggled");
+		});
+		</script>
+	</body>
+</html>

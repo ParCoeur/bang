@@ -17,23 +17,58 @@
 		<div id="wrapper">
 			<ng-include src="'navbar.html'"></ng-include>
 			<!-- #PISTES -->
-			<div class="row" id="pistes">
-				<div class="col-lg-12">
-					<h3>Jeu de Pistes</h3>
+			<div class="row" id="images">
+				<div class="row">
+					<div class="col-lg-12"> 
+						<h3>Jeu de Pistes</h3>
+						<hr>
+					</div>
 				</div>
-				<div class="col-lg-12" ng-repeat="piste in themesCtrl.pistes">
-					<button style="font-size:2.8em;" ng-click="stemFound = !stemFound" ng-class="{'btn-success' :  !stemFound}" class="btn btn-float btn-lg btn-block">{{stemFound && '?' || piste.name}}</button>
-				</div> 
+				<div class="row">
+					<div class="col-lg-2">
+						<ul class="nav nav-tabs nav-stacked">
+							<li ng-repeat="piste in themesCtrl.pistes" ng-class="{'active' : ($index+1)==1}"><a data-toggle="tab" href="#pistes{{$index+1}}">Pistes #{{$index+1}}</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-10 tab-content">
+						<div class="row tab-pane fade" ng-class="{'in' : ($index+1)==1, 'active' : ($index+1)==1}" id="pistes{{$index+1}}" ng-repeat="piste in themesCtrl.pistes">
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="row">
+										<div class="col-lg-3">
+											<button class="btn btn-lg" ng-click="stemUsed = !stemUsed" ng-class="{'btn-success' : !stemUsed}"><img src="img/stems/drums.png">&nbsp;<span style="font-size:2em;">4 Pts</span></button>
+										</div>
+										<div class="col-lg-3">
+											<button class="btn btn-lg" ng-click="stemUsed = !stemUsed" ng-class="{'btn-success' : !stemUsed}"><img src="img/stems/bass.png">&nbsp;<span style="font-size:2em;">3 Pts</span></button>
+										</div>
+										<div class="col-lg-3">
+											<button class="btn btn-lg" ng-click="stemUsed = !stemUsed" ng-class="{'btn-success' : !stemUsed}"><img src="img/stems/keys.png">&nbsp;<span style="font-size:2em;">2 Pts</span></button>
+										</div>
+										<div class="col-lg-3">
+											<button class="btn btn-lg" ng-click="stemUsed = !stemUsed" ng-class="{'btn-success' : !stemUsed}"><img src="img/stems/vocals.png">&nbsp;<span style="font-size:2em;">1 Pts</span></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<div class="row" style="text-align: center;">
+								<div class="col-lg-12">
+									<button class="btn btn-lg btn-float btn-block" style="font-size: 2.5em;" ng-click="pisteFound = !pisteFound" ng-class="{'btn-success' : pisteFound}">{{ !pisteFound && '??? - ???' || piste.name}}</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<!-- /#PISTES -->
 		</div>
 		
 		<!-- JavaScript -->
+		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/angular.js"></script>
-		<script type="text/javascript" src="js/app.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/npm.js"></script>
-		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
 		<!-- Menu Toggle Script -->
 		<script>
 		$("#menu-toggle").click(function(e) {

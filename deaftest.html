@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" class="ng-scope" ng-app="bangModule">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="favicon.ico">
+		<title>BANG 2.0 | Deaf Test</title>
+		<!-- Bootstrap Core CSS -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<!-- Custom CSS -->
+		<link href="css/simple-sidebar.css" rel="stylesheet">
+	</head>
+	<body ng-controller="ThemesController as themesCtrl">
+		<div id="wrapper">
+			<ng-include src="'navbar.html'"></ng-include>
+			<!-- #DEAFTEST -->
+			<div class="row" id="images">
+				<div class="row">
+					<div class="col-lg-12"> 
+						<h3>Deaf Test</h3>
+						<hr>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-1">
+						<ul class="nav nav-tabs nav-stacked">
+							<li ng-repeat="deaf in themesCtrl.deafs" ng-class="{'active' : ($index+1)==1}"><a data-toggle="tab" href="#deaf{{$index+1}}">Deaf #{{$index+1}}</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-11 tab-content">
+						<div class="row tab-pane fade" ng-class="{'in' : ($index+1)==1, 'active' : ($index+1)==1}" id="deaf{{$index+1}}" ng-repeat="deaf in themesCtrl.deafs">
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="panel panel-danger">
+										<div class="panel-heading" style="text-align:center;font-size:2em">
+											<p>Que chante {{deaf.artist}} dans cette vidéo ?</p>
+										</div>
+										<div class="panel-body">
+											<div class="col-lg-12" style="text-align: center;">
+												<img width="50%" height="50%" src="img/deafs/deaf-{{$index+1}}.png" />
+											</div>
+										</div>
+										<div class="panel-footer">
+											<button ng-click="deafFound = !deafFound" style="font-size:2em" ng-repeat="choice in deaf.choices" ng-class="{'btn-{{choice.class}}' : deafFound}" class="btn btn-block btn-lg"><p style="margin:auto;padding:auto;">{{choice.choice}}</p></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /#MASHUP -->
+		</div>
+		<!-- JavaScript -->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/angular.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/npm.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<!-- Menu Toggle Script -->
+		<script>
+		$("#menu-toggle").click(function(e) {
+			e.preventDefault();
+			$("#wrapper").toggleClass("toggled");
+		});
+		</script>
+	</body>
+</html>
