@@ -53,7 +53,7 @@
 								<div class="col-lg-12">
 									<div class="row">
 										<div class="col-lg-5">
-											<button class="btn btn-lg" ng-click="finaleFound = !finaleFound" ng-class="{'btn-{{finale.class}}' : finaleFound==true}" style="font-size:3em;width:440px;height:440px;"><span ng-hide="finaleFound">{{($index+1)}}#</span><img ng-show="finaleFound" ng-src="img/finales/{{finale.class}}/{{finale.class}}-{{$index+1}}.jpg"></button>
+											<button class="btn btn-lg" ng-click="finaleFound = !finaleFound" ng-class="{'btn-{{finale.class}}' : finaleFound==true}" style="font-size:3em;width:440px;height:440px;"><span ng-if="!finaleFound">{{($index+1)}}#</span><img ng-if="finaleFound" ng-src="img/finales/{{finale.class}}/{{finale.class}}-{{$index+1}}.jpg"></button>
 										</div>
 										<div class="col-lg-7">
 											<div class="row">
