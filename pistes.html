@@ -17,7 +17,7 @@
 		<div id="wrapper">
 			<ng-include src="'navbar.html'"></ng-include>
 			<!-- #PISTES -->
-			<div class="row" id="images">
+			<div class="row" id="pistes">
 				<div class="row">
 					<div class="col-lg-12"> 
 						<h3>Jeu de Pistes</h3>
@@ -36,16 +36,20 @@
 								<div class="col-lg-12">
 									<div class="row">
 										<div class="col-lg-3">
-											<button class="btn btn-lg" ng-click="stemUsed = !stemUsed" ng-class="{'btn-success' : !stemUsed}"><img src="img/stems/drums.png">&nbsp;<span style="font-size:2em;">4 Pts</span></button>
+											<h4 style="text-align:center;">Percussions</h4>
+											<button class="btn btn-lg btn-bigfloat" ng-click="drumStemUsed=true;bassStemUsed=false;keyStemUsed=false;vocalStemUsed=false;" ng-class="{'btn-success' : drumStemUsed && !bassStemUsed && !keyStemUsed && !vocalStemUsed}"><img src="img/stems/drums.png">&nbsp;<span style="font-size:2em;">4 Pts</span></button>
 										</div>
 										<div class="col-lg-3">
-											<button class="btn btn-lg" ng-click="stemUsed = !stemUsed" ng-class="{'btn-success' : !stemUsed}"><img src="img/stems/bass.png">&nbsp;<span style="font-size:2em;">3 Pts</span></button>
+											<h4 style="text-align:center;">Basse</h4>
+											<button class="btn btn-lg btn-bigfloat" ng-click="drumStemUsed=false;bassStemUsed=true;keyStemUsed=false;vocalStemUsed=false;" ng-class="{'btn-success' : !drumStemUsed && bassStemUsed && !keyStemUsed && !vocalStemUsed}"><img src="img/stems/bass.png">&nbsp;<span style="font-size:2em;">3 Pts</span></button>
 										</div>
 										<div class="col-lg-3">
-											<button class="btn btn-lg" ng-click="stemUsed = !stemUsed" ng-class="{'btn-success' : !stemUsed}"><img src="img/stems/keys.png">&nbsp;<span style="font-size:2em;">2 Pts</span></button>
+											<h4 style="text-align:center;">Instruments</h4>
+											<button class="btn btn-lg btn-bigfloat" ng-click="drumStemUsed=false;bassStemUsed=false;keyStemUsed=true;vocalStemUsed=false;" ng-class="{'btn-success' : !drumStemUsed && !bassStemUsed && keyStemUsed && !vocalStemUsed}"><img src="img/stems/keys.png">&nbsp;<span style="font-size:2em;">2 Pts</span></button>
 										</div>
 										<div class="col-lg-3">
-											<button class="btn btn-lg" ng-click="stemUsed = !stemUsed" ng-class="{'btn-success' : !stemUsed}"><img src="img/stems/vocals.png">&nbsp;<span style="font-size:2em;">1 Pts</span></button>
+											<h4 style="text-align:center;">Voix</h4>
+											<button class="btn btn-lg btn-bigfloat" ng-click="drumStemUsed=false;bassStemUsed=false;keyStemUsed=false;vocalStemUsed=true;" ng-class="{'btn-success' : !drumStemUsed && !bassStemUsed && !keyStemUsed && vocalStemUsed}"><img src="img/stems/vocals.png">&nbsp;<span style="font-size:2em;">1 Pts</span></button>
 										</div>
 									</div>
 								</div>
@@ -67,7 +71,6 @@
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/angular.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/npm.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
 		<!-- Menu Toggle Script -->
 		<script>

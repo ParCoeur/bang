@@ -33,25 +33,35 @@
 					<div class="row tab-pane fade" ng-class="{'in' : ($index+1)==1, 'active' : ($index+1)==1}" id="trad{{$index+1}}" ng-repeat="trad in themesCtrl.trads">
 						<div class="row">
 							<div class="col-lg-9" style="text-align:center;">
-								<div class="panel">
-									<div class="panel-body">
-										<p style="font-size:2em;" ng-class="{'text-info' : tradUsed}"><span ng-hide="tradUsed">{{ trad.lyrics[0].lyric }}</span><span ng-show="tradUsed">{{ trad.lyrics[1].lyric }}</span></p>
+								<div class="row">
+									<div class="panel">
+										<div class="panel-body">
+											<div style="font-size:1.3em;" class="well" ng-if="!tradUsed">
+												<p ng-repeat="p in trad.lyrics[0].verses">{{p.p}}</p>
+											</div>
+											<div style="font-size:1.3em;" class="well" ng-if="tradUsed">
+												<p class="text-info" ng-repeat="p in trad.lyrics[1].verses">{{p.p}}</p>
+											</div>
+										</div>
 									</div>
 								</div>
+								<div class="row">
+									<button class="btn btn-lg btn-block" style="font-size:2em;" ng-click="tradFound = !tradFound" ng-class="{'btn-info' : tradFound==true}">{{ !tradFound && '??? - ???' || trad.name}}</button>
+								</div>
+								
 							</div>
 							<div class="col-lg-3" style="text-align:center;">
+								<hr>
 								<div class="row">
 									<button ng-click="tradClue = !tradClue" ng-class="{'btn-warning' : tradClue}" class="btn btn-lg" style="font-size:3em;width:240px;height:240px;"><span ng-hide="tradClue">Pays</span><img width="200px" height="200px" ng-show="tradClue" ng-src="img/flags/{{trad.country}}.png" alt="{{trad.country}}"></button>
 								</div>
+								<hr>
 								<div class="row">
 									<button ng-click="tradUsed = !tradUsed" ng-class="{'btn-success' : tradUsed}" class="btn btn-lg" style="font-size:3em;width:240px;height:240px;">Paroles</button>
 								</div>
 							</div>
 						</div>
-						<hr>
-						<div class="row">
-							<button class="btn btn-lg btn-block" ng-click="tradFound = !tradFound" ng-class="{'btn-info' : tradFound==true}">{{ !tradFound && '??? - ???' || trad.name}}</button>
-						</div>
+						
 					</div>
 				</div>
 			</div>
@@ -92,7 +102,6 @@
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/angular.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/npm.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
 		<!-- Menu Toggle Script -->
 		<script>

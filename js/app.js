@@ -18,6 +18,7 @@
 		bang.radio    	= [];
 		bang.trads 		= [];
 		bang.deafs		= [];
+		bang.games      = [];
 
 		$http.get('json/themes.json').success(function(data){
 			bang.normals  = data.normals;
@@ -30,6 +31,7 @@
 			bang.radio    = data.radio;
 			bang.trads 	  = data.trads;
 			bang.deafs	  = data.deafs;
+			bang.games    = data.games;
 		});
 
 		$scope.toggle 	   = true;
@@ -52,9 +54,13 @@
 		$scope.tradClue	   = false;
 		$scope.deafFound   = false;
 		$scope.pisteFound  = false;
-		$scope.stemUsed    = false;
+		$scope.drumStemUsed = true;
+		$scope.bassStemUsed = false;
+		$scope.keyStemUsed = false;
+		$scope.vocalStemUsed = false;
+		$scope.gameUsed = false;
 
-		var initTime = 30
+		var initTime = 20;
 
 		$scope.timers = [new Countdown(initTime), new Countdown(initTime)]; // 2 timers
 		$scope.current = 1;

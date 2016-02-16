@@ -941,11 +941,29 @@
 			"country" : "fr",
 			"lyrics" : [
 				{ 
-					"lyric" : "Dans ce lit où je repose <br> Je suis sans foyer <br> Cette maison que je connais tellement <br> Mais je suis sans foyer <br> Ma faim, elle grandit <br> Et elle ne me laissera pas <br> Et ça brûle dans ma poitrine <br> Je suis sans foyer", 
+					"verses" : [ 
+						{ "p" : "Dans ce lit où je repose" },
+						{ "p" : "Je suis sans foyer" },
+		                { "p" : "Cette maison que je connais tellement" },
+						{ "p" : "Mais je suis sans foyer" },
+						{ "p" : "Ma faim, elle grandit" },
+						{ "p" : "Et elle ne me laissera pas" },
+						{ "p" : "Et ça brûle dans ma poitrine" },
+						{ "p" : "Je suis sans foyer" }
+					],
 					"trad" : true
 				},
 				{
-					"lyric" : "In this bed where I rest <br> I'm homeless <br> This house I know best <br> But I'm homeless <br> My hunger it grows <br> And it won't let me go <br> And it burns in my chest <br> I'm homeless",
+					"verses" : [ 
+						{ "p" : "In this bed where I rest" },
+						{ "p" : "I'm homeless" },
+						{ "p" : "This house I know best" },
+						{ "p" : "But I'm homeless" },
+						{ "p" : "My hunger it grows" },
+						{ "p" : "And it won't let me go" },
+						{ "p" : "And it burns in my chest" },
+						{ "p" : "I'm homeless" }
+					],
 					"trad" : false
 				}
 			]
@@ -954,12 +972,34 @@
 			"name" : "John Legend - All Of Me",
 			"country" : "us",
 			"lyrics" : [
-				{ 
-					"lyric" : "Parce que mon être entier <br> Aime tout de toi <br> Aime tes courbes et tous tes contours <br> Toutes tes parfaites imperfections <br> Donne-toi à moi toute entière <br> Je te donnerai tout de moi <br> Tu es ma fin et mon commencement <br> Même quand je perds je gagne <br> Parce que je te donne tout... de moi <br> Et tu me donnes tout... de toi",
+				{
+					"verses" : [ 
+						{ "p" : "Parce que mon être entier" },
+						{ "p" : "Aime tout de toi" },
+						{ "p" : "Aime tes courbes et tous tes contours" },
+						{ "p" : "Toutes tes parfaites imperfections" },
+						{ "p" : "Donne-toi à moi toute entière" },
+						{ "p" : "Je te donnerai tout de moi" },
+						{ "p" : "Tu es ma fin et mon commencement" },
+						{ "p" : "Même quand je perds je gagne" },
+						{ "p" : "Parce que je te donne tout... de moi" },
+						{ "p" : "Et tu me donnes tout... de toi" }
+					],
 					"trad" : true
 				},
 				{
-					"lyric" : "‘Cause all of me <br> Loves all of you <br> Loves your curves and all your edges <br> All your perfect imperfections <br> Give your all to me <br> I’ll give my all to you <br> You’re my end and my beginning <br> Even when I lose I’m winning <br> ‘Cause I give you all... of me <br> And you give me all... of you",
+					"verses" : [
+						{ "p" : "‘Cause all of me" },
+						{ "p" : "Loves all of you" },
+						{ "p" : "Loves your curves and all your edges" },
+						{ "p" : "All your perfect imperfections" },
+						{ "p" : "Give your all to me" },
+						{ "p" : "I’ll give my all to you" },
+						{ "p" : "You’re my end and my beginning" },
+						{ "p" : "Even when I lose I’m winning" },
+						{ "p" : "‘Cause I give you all... of me" },
+						{ "p" : "And you give me all... of you" }
+					],
 					"trad" : false
 				}
 			]
@@ -969,11 +1009,21 @@
 			"country" : "es",
 			"lyrics" : [
 				{ 
-					"lyric" : "Toutes les promesses de mon amour s'en iront avec toi <br> Tu m'oublieras, tu m'oublieras <br> Près de la gare je pleurerai comme un enfant, <br> Parce que tu pars",
+					"verses" : [ 
+						{ "p" : "Toutes les promesses de mon amour s'en iront avec toi" },
+						{ "p" : "Tu m'oublieras, tu m'oublieras" },
+						{ "p" : "Près de la gare je pleurerai comme un enfant" },
+						{ "p" : "Parce que tu pars, Parce que tu pars" }
+					],
 					"trad" : true
 				},
 				{
-					"lyric" : "Todas las promesas de mi amor se irán contigo <br> Me olvidarás, me olvidarás <br> Junto a la estación lloraré igual que un niño, <br> Porque te vas",
+					"verses" : [ 
+						{ "p" : "Todas las promesas de mi amor se irán contigo" },
+						{ "p" : "Me olvidarás, me olvidarás" },
+						{ "p" : "Junto a la estación lloraré igual que un niño" },
+						{ "p" : "Porque te vas, Porque te vas" }
+					],
 					"trad" : false
 				}
 			]
@@ -983,11 +1033,23 @@
 			"country" : "uk",
 			"lyrics" : [
 				{ 
-					"lyric" : "Il ne cire pas ses godasses, il s'est esquinté les orteils à force de jouer au football <br> Il a la main branlante, il se shoote à la coke <br> Il dit « je te connais, tu me connais » <br> Tout ce que je peux te dire c'est que tu dois être libre <br> Rassemblez-vous tous, maintenant, avec moi",
+					"verses" : [ 
+						{ "p" : "Il ne cire pas ses godasses, il s'est esquinté les orteils à force de jouer au football" },
+						{ "p" : "Il a la main branlante, il se shoote à la coke" },
+						{ "p" : "Il dit « je te connais, tu me connais »" },
+						{ "p" : "Tout ce que je peux te dire c'est que tu dois être libre" },
+						{ "p" : "Rassemblez-vous tous, maintenant, avec moi" }
+					],
 					"trad" : true
 				},
 				{
-					"lyric" : "He wears no shoeshine he got toe-jam football <br> He got monkey finger he shoot coca-cola <br> He says, I know you, you know me <br> One thing I can tell you is you got to be free <br> Come together right now over me",
+					"verses" : [ 
+						{ "p" : "He wears no shoeshine he got toe-jam football" },
+						{ "p" : "He got monkey finger he shoot coca-cola" },
+						{ "p" : "He says, I know you, you know me" },
+						{ "p" : "One thing I can tell you is you got to be free" },
+						{ "p" : "Come together right now over me" }
+					],
 					"trad" : false
 				}
 			]
@@ -997,11 +1059,23 @@
 			"country" : "us",
 			"lyrics" : [
 				{ 
-					"lyric" : "Je vais faire un endroit plus clair <br> Je vais faire un endroit plus sécurisant <br> Je vais aider la race humaine <br> Avec mes propres <br> Avec mes deux propres main",
+					"verses" : [ 
+						{ "p" : "Je vais faire un endroit plus clair" },
+						{ "p" : "Je vais faire un endroit plus sécurisant" },
+						{ "p" : "Je vais aider la race humaine" },
+						{ "p" : "Avec mes propres" },
+						{ "p" : "Avec mes deux propres main" }
+					],
 					"trad" : true
 				},
 				{
-					"lyric" : "I'm gonna make it a brighter place <br> I'm gonna make it a safer place <br> I'm gonna help the human race <br> With my own <br> With my own two hands",
+					"verses" : [ 
+						{ "p" : "I'm gonna make it a brighter place" },
+						{ "p" : "I'm gonna make it a safer place" },
+						{ "p" : "I'm gonna help the human race" },
+						{ "p" : "With my own" },
+						{ "p" : "With my own two hands" }
+					],
 					"trad" : false
 				}
 			]
@@ -1011,11 +1085,27 @@
 			"country" : "us",
 			"lyrics" : [
 				{ 
-					"lyric" : "Basse ! Jusqu'où tu peux descendre <br> Couloir de la mort. Quel frère connait <br> Une fois de plus, l'incroyable est de retour <br> L'animal à rimes <br> L'incroyable D Ennemi public n°1 <br> Les flics me disent 'Ne bougez plus ! ' et je reste transi <br> Est ce que peux leur dire que je n'ai vraiment jamais eu de flingue",
+					"verses" : [ 
+						{ "p" : "Basse ! Jusqu'où tu peux descendre" },
+						{ "p" : "Couloir de la mort. Quel frère connait" },
+						{ "p" : "Une fois de plus, l'incroyable est de retour" },
+						{ "p" : "L'animal à rimes" },
+						{ "p" : "L'incroyable D Ennemi public n°1" },
+						{ "p" : "Les flics me disent 'Ne bougez plus ! ' et je reste transi" },
+						{ "p" : "Est ce que peux leur dire que je n'ai vraiment jamais eu de flingue" }
+					],
 					"trad" : true
 				},
 				{
-					"lyric" : "Bass ! How low can you go ? <br> Death row. What a brother knows. <br> Once again, back is the incredible <br> The rhyme animal <br> The incredible D, Public Enemy Number One <br> 'Five-O' said, 'Freeze !'' and I got numb <br> Can I tell 'em that I really never had a gun ?",
+					"verses" : [ 
+						{ "p" : "Bass ! How low can you go ?" },
+						{ "p" : "Death row. What a brother knows." },
+						{ "p" : "Once again, back is the incredible" },
+						{ "p" : "The rhyme animal" },
+						{ "p" : "The incredible D, Public Enemy Number One" },
+						{ "p" : "'Five-O' said, 'Freeze !'' and I got numb" },
+						{ "p" : "Can I tell 'em that I really never had a gun ?" }
+					],
 					"trad" : false
 				}
 			]
@@ -1025,11 +1115,19 @@
 			"country" : "fr",
 			"lyrics" : [
 				{ 
-					"lyric" : "Voilà ma station <br> Voilà ma station <br> Mais si tu dis juste un mot je resterai avec toi",
+					"verses" : [ 
+						{ "p" : "Voilà ma station" },
+						{ "p" : "Voilà ma station" },
+						{ "p" : "Mais si tu dis juste un mot je resterai avec toi" }
+					],
 					"trad" : true
 				},
 				{
-					"lyric" : "Here's my station <br> Here's my station <br> Ouh ouh... <br> But if you say just one word I'll stay with you...",
+					"verses" : [ 
+						{ "p" : "Here's my station" },
+						{ "p" : "Here's my station" },
+						{ "p" : "But if you say just one word I'll stay with you..." }
+					],
 					"trad" : false
 				}
 			]
@@ -1194,5 +1292,17 @@
 				{ "choice" : "What's My Name (Reprise de Rihanna et Drake)", "class" : "danger" }
 			]
 		}
+	],
+	"games" : [
+		{ "name" : "Blind Test", "class" : "primary" },
+		{ "name" : "Ping-Pong", "class" : "info" },
+		{ "name" : "Jeu de Pistes", "class" : "success" },
+		{ "name" : "Traduction de Chanson", "class" : "info" },
+		{ "name" : "Deaf Test", "class" : "danger" },
+		{ "name" : "Radio Test", "class" : "primary" },
+		{ "name" : "Mash-Ups", "class" : "warning" },
+		{ "name" : "En Images", "class" : "primary" },
+		{ "name" : "N'Oubliez Pas Les Paroles", "class" : "info" },
+		{ "name" : "La Grande Finale", "class" : "default" }
 	]
 }
