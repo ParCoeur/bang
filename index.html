@@ -51,6 +51,29 @@
 					</table>
 				</div>
 			</div>
+
+			<div class="modal fade" ng-repeat="game in themesCtrl.games" id="{{game.id}}">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h3>Et Maintenant...</h3>
+						</div>
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="well">
+										<button class="btn btn-lg btn-bigfloat btn-{{game.class}} btn-block" style="font-size:5em;">{{game.name}}</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">X</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</div>
 		
 		<!-- JavaScript -->

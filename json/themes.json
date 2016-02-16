@@ -412,8 +412,8 @@
 			]
 		},
 		{ 
-			"name" : "Eurovision",
-			"id" : "eurovision",
+			"name" : "Star Wars",
+			"id" : "starwars",
 			"questions" : [
 				{ 
 					"question" : "En 2005, le pays gagnant était ...",
@@ -457,8 +457,8 @@
 			]
 		},
 		{ 
-			"name" : "James Bond",
-			"id" : "jamesbond",
+			"name" : "Publicités",
+			"id" : "pubs",
 			"questions" : [
 				{ 
 					"question" : "Le générique de Dangereusement Vôtre est interprété par ...",
@@ -1294,15 +1294,15 @@
 		}
 	],
 	"games" : [
-		{ "name" : "Blind Test", "class" : "primary" },
-		{ "name" : "Ping-Pong", "class" : "info" },
-		{ "name" : "Jeu de Pistes", "class" : "success" },
-		{ "name" : "Traduction de Chanson", "class" : "info" },
-		{ "name" : "Deaf Test", "class" : "danger" },
-		{ "name" : "Radio Test", "class" : "primary" },
-		{ "name" : "Mash-Ups", "class" : "warning" },
-		{ "name" : "En Images", "class" : "primary" },
-		{ "name" : "N'Oubliez Pas Les Paroles", "class" : "info" },
-		{ "name" : "La Grande Finale", "class" : "default" }
+		{ "name" : "Blind Test", "id" : "blindtest", "class" : "primary" },
+		{ "name" : "Ping-Pong", "id" : "pingpong",  "class" : "info" },
+		{ "name" : "Jeu de Pistes", "id" : "pistes", "class" : "success" },
+		{ "name" : "Traduction de Chanson", "id" : "traduction",  "class" : "info" },
+		{ "name" : "Deaf Test", "id" : "deaftest",  "class" : "danger" },
+		{ "name" : "Radio Test", "id" : "radio",  "class" : "primary" },
+		{ "name" : "Mash-Ups", "id" : "mashup", "class" : "warning" },
+		{ "name" : "En Images", "id" : "images", "class" : "primary" },
+		{ "name" : "N'Oubliez Pas Les Paroles", "id" : "lyrics", "class" : "info" },
+		{ "name" : "La Grande Finale", "id" : "finale", "class" : "default" }
 	]
 }
