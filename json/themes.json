@@ -211,17 +211,17 @@
 			]
 		},
 		{ 
-			"name" : "Magie", 
-			"id" : "magie",
+			"name" : "So Good", 
+			"id" : "sogood",
 			"class" : "warning",
 			"titles" : [
-				{ "title" : "Queen - A Kind Of Magic" },
-				{ "title" : "One-T - The Magic Key" },
-				{ "title" : "Lykke Li - I Follow Rivers (The Magician Remix)" },
-				{ "title" : "Ciara - Love Sex Magic" },
-				{ "title" : "Magic! - Rude" },
-				{ "title" : "Magic System - Bouger Bouger" },
-				{ "title" : "Coldplay - Magic" }
+				{ "title" : "Disclosure - Omen" },
+				{ "title" : "Emeli Sandé - Next To Me" },
+				{ "title" : "Conor Maynard - Talking About" },
+				{ "title" : "Mome - Aloha" },
+				{ "title" : "Madelyn Bailey - Radioactive" },
+				{ "title" : "Gnarls Barkley - Crazy" },
+				{ "title" : "Hyphen Hyphen - Just Need Your Love" }
 			]
 		},
 		{ 
@@ -371,28 +371,28 @@
 			"id" : "arriereplan",
 			"questions" : [
 				{ 
-					"question" : "On entend James Brown - People Get Up And Drive That Funky Soul dans ...",
+					"question" : "On entend Nena - 99 Luftballoons dans ...",
 					"reponses" : [
 						{ 
-							"reponse" : "Spider-Man 3",
-							"class" : "success"
+							"reponse" : "Man Of Steel",
+							"class" : "danger"
 						},
 						{
-							"reponse" : "Iron Man 3",
-							"class" : "danger"
+							"reponse" : "Watchmen",
+							"class" : "success"
 						}
 					]
 				},
 				{ 
-					"question" : "On entend Edith Piaf - Non, Je Ne Regrette Rien dans ...",
+					"question" : "On entend Girls Aloud - Jump dans ...",
 					"reponses" : [
 						{ 
-							"reponse" : "Insomnia",
-							"class" : "danger"
+							"reponse" : "Love Actually",
+							"class" : "success"
 						},
 						{
-							"reponse" : "Inception",
-							"class" : "success"
+							"reponse" : "Valentine's Day",
+							"class" : "danger"
 						}
 					]
 				},
@@ -416,40 +416,40 @@
 			"id" : "starwars",
 			"questions" : [
 				{ 
-					"question" : "En 2005, le pays gagnant était ...",
+					"question" : "Ce thème est celui de ...",
 					"reponses" : [
 						{ 
-							"reponse" : "La Grèce (Helena Paparizou - My Number One)",
+							"reponse" : "Yoda",
 							"class" : "success"
 						},
 						{
-							"reponse" : "La Suède (Martin Stenmarck - Las Vegas)",
+							"reponse" : "Luke",
 							"class" : "danger"
 						}
 					]
 				},
 				{ 
-					"question" : "En 1998, le pays gagnant était ...",
+					"question" : "Ce thème est celui de ...",
 					"reponses" : [
 						{ 
-							"reponse" : "Israël (Dana International - Diva)",
-							"class" : "success"
+							"reponse" : "Obi-Wan",
+							"class" : "danger"
 						},
 						{
-							"reponse" : "Malte (Chiara - The One That I Love)",
-							"class" : "danger"
+							"reponse" : "Luke et Leia",
+							"class" : "success"
 						}
 					]
 				},
 				{ 
-					"question" : "En 2010, le pays gagnant était ...",
+					"question" : "Ce thème est celui de ...",
 					"reponses" : [
 						{ 
-							"reponse" : "L'Allemagne (Lena Meyer-Landrut - Satellite)",
+							"reponse" : "Anakin et Padmé",
 							"class" : "success"
 						},
 						{
-							"reponse" : "La Roumanie (Paula Seling & Ovi - Playing With Fire)",
+							"reponse" : "Leia et Han Solo",
 							"class" : "danger"
 						}
 					]
@@ -461,41 +461,41 @@
 			"id" : "pubs",
 			"questions" : [
 				{ 
-					"question" : "Le générique de Dangereusement Vôtre est interprété par ...",
+					"question" : "Dans quelle pub peut-on entendre Léo Férré - C'est Extra ?",
 					"reponses" : [
 						{ 
-							"reponse" : "Rita Coolidge",
+							"reponse" : "Beurre Elle & Vire",
 							"class" : "danger"
 						},
 						{
-							"reponse" : "Duran Duran",
+							"reponse" : "Sardines Connetable",
 							"class" : "success"
 						}
 					]
 				},
 				{ 
-					"question" : "Le générique de Demain Ne Meurt Jamais est interprété par ...",
+					"question" : "Dans quelle pub peut-on entendre The Swiss - Bubble Bath ?",
 					"reponses" : [
 						{ 
-							"reponse" : "Garbage",
+							"reponse" : "Flower Elixir by Kenzo",
 							"class" : "danger"
 						},
 						{
-							"reponse" : "Sheryl Crow",
+							"reponse" : "Live Irresistible by Givenchy",
 							"class" : "success"
 						}
 					]
 				},
 				{ 
-					"question" : "Le générique de Quantum Of Solace est joué par ...",
+					"question" : "Dans quelle pub peut-on entendre MisterWives - Our Own House ?",
 					"reponses" : [
 						{ 
-							"reponse" : "Chris Cornell",
-							"class" : "danger"
+							"reponse" : "Weight Watchers",
+							"class" : "success"
 						},
 						{
-							"reponse" : "Jack White",
-							"class" : "success"
+							"reponse" : "Activia de Danone",
+							"class" : "danger"
 						}
 					]
 				}
@@ -513,7 +513,7 @@
 							"class" : "danger"
 						},
 						{
-							"reponse" : "Gaumont Buena Vista International",
+							"reponse" : "Universal",
 							"class" : "success"
 						}
 					]
@@ -522,12 +522,12 @@
 					"question" : "Ce logo de boîte de distribution française appartient à ...",
 					"reponses" : [
 						{ 
-							"reponse" : "UGC",
-							"class" : "success"
+							"reponse" : "Studio Canal",
+							"class" : "danger"
 						},
 						{
 							"reponse" : "Pathé",
-							"class" : "danger"
+							"class" : "success"
 						}
 					]
 				},
@@ -535,11 +535,11 @@
 					"question" : "Ce logo de boîte de production appartient à ...",
 					"reponses" : [
 						{ 
-							"reponse" : "Columbia Pictures",
+							"reponse" : "Gaumont Buena Vista International",
 							"class" : "success"
 						},
 						{
-							"reponse" : "Paramount Pictures",
+							"reponse" : "Paramount Pictures Videos",
 							"class" : "danger"
 						}
 					]
@@ -755,8 +755,8 @@
 	],
 	"lyrics" : [
 		{ 
-			"name" : "Teri Moise - Les Poèmes De Michelle",
-			"id" : "terimoise",
+			"name" : "Gilbert Montagné - Sous Les Sunlight Des Tropiques",
+			"id" : "montagne",
 			"questions" : [
 				{ 
 					"question" : "Michelle veut croire / En l'innocence que sa vie ne permet pas / Si jeune trop mûre / Elle connaît déjà la faim les nuits dures / Elle s'écrit une vie...",
@@ -800,8 +800,8 @@
 			]
 		},
 		{ 
-			"name" : "Géraldine - Bouge",
-			"id" : "geraldine",
+			"name" : "Gérald De Palmas - Sur La Route",
+			"id" : "depalmas",
 			"questions" : [
 				{ 
 					"question" : "Aux rythmes des envies d'un monde indécis...",
@@ -845,8 +845,8 @@
 			]
 		},
 		{ 
-			"name" : "Marie-Mai - Il Faut Que Tu T'en Ailles",
-			"id" : "mariemai",
+			"name" : "Magalie Vaé - Je Ne Suis Qu'une Chanson",
+			"id" : "questiondesurvie",
 			"questions" : [
 				{ 
 					"question" : "Ta présence me dérange...",
@@ -890,7 +890,7 @@
 			]
 		},
 		{ 
-			"name" : "Fawkoju - C'est Comme Ci, C'est Comme Ca",
+			"name" : "Corinne Charby - Pile Ou Face",
 			"id" : "fawkoju",
 			"questions" : [
 				{ 

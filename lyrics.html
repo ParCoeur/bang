@@ -21,8 +21,8 @@
 				<div class="col-lg-12">
 					<h3>N'Oubliez Pas Les Paroles</h3>
 					<hr>
-					<div class="col-lg-12" ng-repeat="lyric in themesCtrl.lyrics">
-						<button data-toggle="modal" data-target="#lyric{{$index+1}}" style="font-size:3.5em;" ng-click="lyricUsed = !lyricUsed" ng-class="{'btn-info' :  !lyricUsed}" class="btn btn-float btn-lg btn-block">{{"#"+($index+1)+" : "}}{{lyricUsed && '??? - ???' || lyric.name}}</button>
+					<div class="col-lg-12">
+						<button ng-repeat="lyric in themesCtrl.lyrics" data-toggle="modal" data-target="#lyric{{$index+1}}" style="font-size:3.5em;" ng-click="lyricUsed = !lyricUsed" ng-class="{'btn-info' :  lyricUsed}" class="btn btn-float btn-lg btn-block">{{lyric.name}}</button>
 					</div>
 				</div> 
 			</div>
